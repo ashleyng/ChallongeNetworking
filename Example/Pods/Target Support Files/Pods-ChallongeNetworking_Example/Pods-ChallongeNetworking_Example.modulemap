@@ -1,0 +1,6 @@
+framework module Pods_ChallongeNetworking_Example {
+  umbrella header "Pods-ChallongeNetworking_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
