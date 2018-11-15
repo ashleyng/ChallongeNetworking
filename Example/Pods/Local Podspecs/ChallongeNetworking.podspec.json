@@ -1,0 +1,22 @@
+{
+  "name": "ChallongeNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of ChallongeNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rocket1ashleyng/ChallongeNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rocket1ashleyng": "ashleyng@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/rocket1ashleyng/ChallongeNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ChallongeNetworking/Classes/**/*"
+}

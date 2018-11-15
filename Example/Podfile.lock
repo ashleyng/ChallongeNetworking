@@ -1,0 +1,16 @@
+PODS:
+  - ChallongeNetworking (0.1.0)
+
+DEPENDENCIES:
+  - ChallongeNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  ChallongeNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChallongeNetworking: eccbfcaa6032dc17dc7407c9416ce634b0b349e7
+
+PODFILE CHECKSUM: 49a5989be7b56200e800533234284ed622cb0637
+
+COCOAPODS: 1.5.3

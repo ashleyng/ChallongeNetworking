@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ChallongeNetworking_Example' do
+  pod 'ChallongeNetworking', :path => '../'
+
+  target 'ChallongeNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
