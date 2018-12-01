@@ -12,7 +12,7 @@ struct RootTournament: Codable {
 }
 
 public struct Tournament: Codable {
-    enum State: String, Codable {
+    public enum State: String, Codable {
         case all
         case pending
         case inProgress
@@ -20,7 +20,7 @@ public struct Tournament: Codable {
         case underway
     }
     
-    enum TournamentType: String, Codable {
+    public enum TournamentType: String, Codable {
         case singleElimination = "single elimination"
         case doubleElimination = "double elimination"
         case roundRobin = "round robin"
@@ -38,15 +38,15 @@ public struct Tournament: Codable {
         case liveImageUrl = "live_image_url"
     }
     
-    let dateCreated: String
-    let description: String
-    let gameId: Int?
-    let id: Int
-    let name: String
-    let participantsCount: Int
-    let state: State
-    let tournamentType: TournamentType
-    let updatedAt: String
-    let url: URL
-    let liveImageUrl: URL
+    public let dateCreated: String
+    public let description: String
+    public let gameId: Int?
+    public let id: Int
+    public let name: String
+    public let participantsCount: Int
+    public let state: State
+    public let tournamentType: TournamentType
+    public let updatedAt: String
+    public let url: URL
+    public let liveImageUrl: URL
 }
