@@ -27,6 +27,28 @@ public class ChallongeNetworking {
         self.baseUrlString = "https://\(username):\(apiKey)@api.challonge.com/v1/\(Entity.tournaments)"
     }
     
+    public func checkCredentials(completion: @escaping (Int?) -> Void) {
+        dataTask?.cancel()
+        defer {
+            dataTask?.resume()
+        }
+
+        guard let url = URL(string: baseUrlString + ".json") else {
+            return
+        }
+        dataTask = defaultSession.dataTask(with: url) { data, response, error in
+            defer {
+                self.dataTask = nil
+            }
+
+            if let urlResponse = response as? HTTPURLResponse {
+                completion(urlResponse.statusCode)
+                return
+            }
+            completion(nil)
+        }
+    }
+
     public func getAllTournaments(completion: (([Tournament]) -> Void)? = nil,
                            onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
@@ -41,8 +63,8 @@ public class ChallongeNetworking {
             defer {
                 self.dataTask = nil
             }
+            
             self.parseDataTaskResult(data: data, response: response, error: error, completion: { data in
-                print(data)
                 guard let rootTournaments = try? self.jsonDecoder.decode([RootTournament].self, from: data) else {
                     onError?(ChallongeError.decodeFail)
                     return
