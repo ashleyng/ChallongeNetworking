@@ -1,6 +1,6 @@
 # ChallongeNetworking
 
-[![CI Status](https://img.shields.io/travis/ashleyng/ChallongeNetworking.svg?style=flat)](https://travis-ci.org/rocket1ashleyng/ChallongeNetworking)
+[![CI Status](https://img.shields.io/travis/ashleyng/ChallongeNetworking.svg?style=flat)](https://travis-ci.org/ashleyng/ChallongeNetworking)
 [![Version](https://img.shields.io/cocoapods/v/ChallongeNetworking.svg?style=flat)](https://cocoapods.org/pods/ChallongeNetworking)
 [![License](https://img.shields.io/cocoapods/l/ChallongeNetworking.svg?style=flat)](https://cocoapods.org/pods/ChallongeNetworking)
 [![Platform](https://img.shields.io/cocoapods/p/ChallongeNetworking.svg?style=flat)](https://cocoapods.org/pods/ChallongeNetworking)
