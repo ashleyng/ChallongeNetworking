@@ -109,7 +109,7 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
             self.present(alert, animated: true, completion: nil)
         case .getParticipants:
             let alert = createAlertControllerWithTextField(title: nil, message: "Fetch participants for tournament") { id, _ in
-                self.networking.getParticipantsForTournament(id, completion: { participants in
+                self.networking.getParticipantsForTournament(Int(id)!, completion: { participants in
                     guard let encodedData = try? encoder.encode(participants),
                         let stringValue = String(data: encodedData, encoding: .utf8) else {
                             return
@@ -129,7 +129,7 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
             self.present(alert, animated: true, completion: nil)
         case .getMatches:
             let alert = createAlertControllerWithTextField(title: nil, message: "Fetch matches for tournament") { id, _ in
-                self.networking.getMatchesForTournament(id, completion: { matches in
+                self.networking.getMatchesForTournament(Int(id)!, completion: { matches in
                     guard let encodedData = try? encoder.encode(matches),
                         let stringValue = String(data: encodedData, encoding: .utf8) else {
                             return

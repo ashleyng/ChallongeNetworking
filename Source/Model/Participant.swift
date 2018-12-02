@@ -18,9 +18,9 @@ public struct Participant: Codable {
         case tournamentId = "tournament_id"
     }
     
-    let id: Int
-    let name: String
-    let tournamentId: Int
+    public let id: Int
+    public let name: String
+    public let tournamentId: Int
     
 }
 

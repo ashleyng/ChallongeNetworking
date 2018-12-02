@@ -12,9 +12,10 @@ public struct RootMatch: Codable {
 }
 
 public struct Match: Codable {
-    enum State: String, Codable {
+    public enum State: String, Codable {
         case open
         case pending
+        case complete
     }
     
     enum CodingKeys: String, CodingKey {
@@ -24,13 +25,15 @@ public struct Match: Codable {
         case tournamentId = "tournament_id"
         case winnerId = "winner_id"
         case scoresCsv = "scores_csv"
+        case suggestedPlayOrder = "suggested_play_order"
     }
     
-    let id: Int
-    let player1Id: Int?
-    let player2Id: Int?
-    let state: State
-    let tournamentId: Int
-    let winnerId: Int?
-    let scoresCsv: String?
+    public let id: Int
+    public let player1Id: Int?
+    public let player2Id: Int?
+    public let state: State
+    public let tournamentId: Int
+    public let winnerId: Int?
+    public let scoresCsv: String?
+    public let suggestedPlayOrder: Int
 }

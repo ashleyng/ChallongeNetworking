@@ -108,7 +108,7 @@ public class ChallongeNetworking {
         }
     }
     
-    public func getParticipantsForTournament(_ id: String,
+    public func getParticipantsForTournament(_ id: Int,
                                       completion: (([Participant]) -> Void)? = nil,
                                       onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
@@ -134,7 +134,7 @@ public class ChallongeNetworking {
         }
     }
     
-    public func getMatchesForTournament(_ id: String,
+    public func getMatchesForTournament(_ id: Int,
                                  completion: (([Match]) -> Void)? = nil,
                                  onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()

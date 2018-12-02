@@ -13,11 +13,23 @@ struct RootTournament: Codable {
 
 public struct Tournament: Codable {
     public enum State: String, Codable {
-        case all
-        case pending
-        case inProgress
-        case ended
-        case underway
+        case pending // hasn't started yet
+        case complete
+        case underway // currently live
+        case awaiting_review // waiting for tournament to be finalized
+
+        public var readableStatus: String {
+            switch self {
+            case .pending:
+                return "Not Started"
+            case .complete:
+                return "Completed"
+            case .underway:
+                return "Live"
+            case .awaiting_review:
+                return "Needs Review"
+            }
+        }
     }
     
     public enum TournamentType: String, Codable {
