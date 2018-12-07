@@ -21,6 +21,7 @@ public class ChallongeNetworking {
     enum ChallongeError: Error {
         case decodeFail
         case unknown
+        case fourOhFour
     }
     
     public init(username: String, apiKey: String) {
@@ -161,7 +162,7 @@ public class ChallongeNetworking {
     }
     
     public func getSingleMatchForTournament(_ tournamentId: String,
-                                     matchId: String,
+                                     matchId: Int,
                                      completion: ((Match) -> Void)? = nil,
                                      onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
@@ -187,6 +188,45 @@ public class ChallongeNetworking {
         }
     }
     
+    public func setWinnerForMatch(_ tournamentId: Int,
+                                  matchId: Int,
+                                  winnderId: Int,
+                                  score: String?,
+                                  completion: ((Match) -> Void)? = nil,
+                                  onError: ((Error) -> Void)? = nil) {
+        dataTask?.cancel()
+        defer {
+            dataTask?.resume()
+        }
+
+        guard let url = URL(string: "\(baseUrlString)/\(tournamentId)/\(Entity.matches)/\(matchId).json") else {
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
+        let updateMatch = UpdateMatch(winnerId: winnderId, scoresCsv: score)
+
+        guard let data = try? jsonEncoder.encode([RootUpdateMatch(match: updateMatch)]) else {
+            return
+        }
+        request.httpBody = data
+        dataTask = defaultSession.dataTask(with: request) { data, response, error in
+            defer {
+                self.dataTask = nil
+            }
+            self.parseDataTaskResult(data: data, response: response, error: error, completion: { data in
+                guard let rootMatch = try? self.jsonDecoder.decode(RootMatch.self, from: data) else {
+                    onError?(ChallongeError.decodeFail)
+                    return
+                }
+                completion?(rootMatch.match)
+            }, onError: onError)
+        }
+    }
+
     private func parseDataTaskResult(data: Data?,
                                      response: URLResponse?,
                                      error: Error?,
@@ -195,9 +235,15 @@ public class ChallongeNetworking {
         if let error = error {
             onError?(error)
         } else if let data = data,
-            let response = response as? HTTPURLResponse,
-            response.statusCode == 200 {
-            completion?(data)
+            let response = response as? HTTPURLResponse {
+            print("STATUS CODE: \(response.statusCode)")
+            if (response.statusCode == 200) {
+                completion?(data)
+            } else if (response.statusCode == 404) {
+                onError?(ChallongeError.fourOhFour)
+            } else {
+                print("OTHER EEERRROROR: \(response.statusCode)")
+            }
         } else {
             onError?(ChallongeError.unknown)
         }

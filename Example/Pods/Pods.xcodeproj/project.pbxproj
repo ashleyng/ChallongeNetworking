@@ -19,6 +19,7 @@
 		D8030EB4219D03AC00283C97 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB3219D03AC00283C97 /* Participant.swift */; };
 		D8030EB7219D03C000283C97 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB6219D03C000283C97 /* Match.swift */; };
 		D8030EB9219D03E700283C97 /* ChallongeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB8219D03E700283C97 /* ChallongeNetworking.swift */; };
+		D880666721B7666C00FDFDA0 /* UpdateMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D880666621B7666C00FDFDA0 /* UpdateMatch.swift */; };
 		E8226A9428B52BDDDD236CE9621255B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		D8030EB3219D03AC00283C97 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		D8030EB6219D03C000283C97 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		D8030EB8219D03E700283C97 /* ChallongeNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallongeNetworking.swift; sourceTree = "<group>"; };
+		D880666621B7666C00FDFDA0 /* UpdateMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMatch.swift; sourceTree = "<group>"; };
 		E36E326EAD2171516A8B2D0328A40CAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E652982D0B5C45A99886EA6EC3A8E284 /* Pods-ChallongeNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChallongeNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FEA225E6298DC79061F46255287603CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				D8030EB1219D038F00283C97 /* Tournament.swift */,
 				D8030EB3219D03AC00283C97 /* Participant.swift */,
 				D8030EB6219D03C000283C97 /* Match.swift */,
+				D880666621B7666C00FDFDA0 /* UpdateMatch.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8030EB9219D03E700283C97 /* ChallongeNetworking.swift in Sources */,
+				D880666721B7666C00FDFDA0 /* UpdateMatch.swift in Sources */,
 				D8030EB2219D038F00283C97 /* Tournament.swift in Sources */,
 				5AC5F30BD4EF2F19C2EBADF2164F8575 /* ChallongeNetworking-dummy.m in Sources */,
 				D8030EB4219D03AC00283C97 /* Participant.swift in Sources */,
