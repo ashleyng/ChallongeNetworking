@@ -14,13 +14,14 @@ public struct RootParticipant: Codable {
 public struct Participant: Codable {
     
     enum CodingKeys: String, CodingKey {
-        case id, name
+        case id, name, icon
         case tournamentId = "tournament_id"
     }
     
     public let id: Int
     public let name: String
     public let tournamentId: Int
+    public let icon: String?
     
 }
 

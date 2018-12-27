@@ -149,7 +149,7 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
             self.present(alert, animated: true, completion: nil)
         case .getMatch:
             let alert = createAlertControllerWithTextField(title: nil, message: "Fetch match for tournament", addSecondEntityId: true) { id, secondId in
-                guard let secondId = secondId else {
+                guard let stringSecondId = secondId, let secondId = Int(stringSecondId), let id = Int(id) else {
                     return
                 }
                 self.networking.getSingleMatchForTournament(id, matchId: secondId, completion: { match in

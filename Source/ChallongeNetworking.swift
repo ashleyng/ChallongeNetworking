@@ -51,7 +51,7 @@ public class ChallongeNetworking {
     }
 
     public func getAllTournaments(completion: (([Tournament]) -> Void)? = nil,
-                           onError: ((Error) -> Void)? = nil) {
+                                  onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -77,10 +77,10 @@ public class ChallongeNetworking {
     }
     
     public func getTournament(_ id: String,
-                       includeParticipants: Bool = false,
-                       includeMatches: Bool = false,
-                       completion: ((Tournament) -> Void)? = nil,
-                       onError: ((Error) -> Void)? = nil) {
+                              includeParticipants: Bool = false,
+                              includeMatches: Bool = false,
+                              completion: ((Tournament) -> Void)? = nil,
+                              onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -110,8 +110,8 @@ public class ChallongeNetworking {
     }
     
     public func getParticipantsForTournament(_ id: Int,
-                                      completion: (([Participant]) -> Void)? = nil,
-                                      onError: ((Error) -> Void)? = nil) {
+                                             completion: (([Participant]) -> Void)? = nil,
+                                             onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -136,8 +136,8 @@ public class ChallongeNetworking {
     }
     
     public func getMatchesForTournament(_ id: Int,
-                                 completion: (([Match]) -> Void)? = nil,
-                                 onError: ((Error) -> Void)? = nil) {
+                                        completion: (([Match]) -> Void)? = nil,
+                                        onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -161,10 +161,10 @@ public class ChallongeNetworking {
         }
     }
     
-    public func getSingleMatchForTournament(_ tournamentId: String,
-                                     matchId: Int,
-                                     completion: ((Match) -> Void)? = nil,
-                                     onError: ((Error) -> Void)? = nil) {
+    public func getSingleMatchForTournament(_ tournamentId: Int,
+                                            matchId: Int,
+                                            completion: ((Match) -> Void)? = nil,
+                                            onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -206,10 +206,9 @@ public class ChallongeNetworking {
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
         let updateMatch = UpdateMatch(winnerId: winnderId, scoresCsv: score)
 
-        guard let data = try? jsonEncoder.encode([RootUpdateMatch(match: updateMatch)]) else {
+        guard let data = try? jsonEncoder.encode(RootUpdateMatch(match: updateMatch)) else {
             return
         }
         request.httpBody = data
