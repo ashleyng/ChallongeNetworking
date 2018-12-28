@@ -21,14 +21,37 @@ public class ChallongeNetworking {
     enum ChallongeError: Error {
         case decodeFail
         case unknown
+        case fourOhFour
     }
     
     public init(username: String, apiKey: String) {
         self.baseUrlString = "https://\(username):\(apiKey)@api.challonge.com/v1/\(Entity.tournaments)"
     }
     
+    public func checkCredentials(completion: @escaping (Int?) -> Void) {
+        dataTask?.cancel()
+        defer {
+            dataTask?.resume()
+        }
+
+        guard let url = URL(string: baseUrlString + ".json") else {
+            return
+        }
+        dataTask = defaultSession.dataTask(with: url) { data, response, error in
+            defer {
+                self.dataTask = nil
+            }
+
+            if let urlResponse = response as? HTTPURLResponse {
+                completion(urlResponse.statusCode)
+                return
+            }
+            completion(nil)
+        }
+    }
+
     public func getAllTournaments(completion: (([Tournament]) -> Void)? = nil,
-                           onError: ((Error) -> Void)? = nil) {
+                                  onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -41,8 +64,8 @@ public class ChallongeNetworking {
             defer {
                 self.dataTask = nil
             }
+            
             self.parseDataTaskResult(data: data, response: response, error: error, completion: { data in
-                print(data)
                 guard let rootTournaments = try? self.jsonDecoder.decode([RootTournament].self, from: data) else {
                     onError?(ChallongeError.decodeFail)
                     return
@@ -54,10 +77,10 @@ public class ChallongeNetworking {
     }
     
     public func getTournament(_ id: String,
-                       includeParticipants: Bool = false,
-                       includeMatches: Bool = false,
-                       completion: ((Tournament) -> Void)? = nil,
-                       onError: ((Error) -> Void)? = nil) {
+                              includeParticipants: Bool = false,
+                              includeMatches: Bool = false,
+                              completion: ((Tournament) -> Void)? = nil,
+                              onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -86,9 +109,9 @@ public class ChallongeNetworking {
         }
     }
     
-    public func getParticipantsForTournament(_ id: String,
-                                      completion: (([Participant]) -> Void)? = nil,
-                                      onError: ((Error) -> Void)? = nil) {
+    public func getParticipantsForTournament(_ id: Int,
+                                             completion: (([Participant]) -> Void)? = nil,
+                                             onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -112,9 +135,9 @@ public class ChallongeNetworking {
         }
     }
     
-    public func getMatchesForTournament(_ id: String,
-                                 completion: (([Match]) -> Void)? = nil,
-                                 onError: ((Error) -> Void)? = nil) {
+    public func getMatchesForTournament(_ id: Int,
+                                        completion: (([Match]) -> Void)? = nil,
+                                        onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -138,10 +161,10 @@ public class ChallongeNetworking {
         }
     }
     
-    public func getSingleMatchForTournament(_ tournamentId: String,
-                                     matchId: String,
-                                     completion: ((Match) -> Void)? = nil,
-                                     onError: ((Error) -> Void)? = nil) {
+    public func getSingleMatchForTournament(_ tournamentId: Int,
+                                            matchId: Int,
+                                            completion: ((Match) -> Void)? = nil,
+                                            onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
         defer {
             dataTask?.resume()
@@ -165,6 +188,44 @@ public class ChallongeNetworking {
         }
     }
     
+    public func setWinnerForMatch(_ tournamentId: Int,
+                                  matchId: Int,
+                                  winnderId: Int,
+                                  score: String?,
+                                  completion: ((Match) -> Void)? = nil,
+                                  onError: ((Error) -> Void)? = nil) {
+        dataTask?.cancel()
+        defer {
+            dataTask?.resume()
+        }
+
+        guard let url = URL(string: "\(baseUrlString)/\(tournamentId)/\(Entity.matches)/\(matchId).json") else {
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        let updateMatch = UpdateMatch(winnerId: winnderId, scoresCsv: score)
+
+        guard let data = try? jsonEncoder.encode(RootUpdateMatch(match: updateMatch)) else {
+            return
+        }
+        request.httpBody = data
+        dataTask = defaultSession.dataTask(with: request) { data, response, error in
+            defer {
+                self.dataTask = nil
+            }
+            self.parseDataTaskResult(data: data, response: response, error: error, completion: { data in
+                guard let rootMatch = try? self.jsonDecoder.decode(RootMatch.self, from: data) else {
+                    onError?(ChallongeError.decodeFail)
+                    return
+                }
+                completion?(rootMatch.match)
+            }, onError: onError)
+        }
+    }
+
     private func parseDataTaskResult(data: Data?,
                                      response: URLResponse?,
                                      error: Error?,
@@ -173,9 +234,15 @@ public class ChallongeNetworking {
         if let error = error {
             onError?(error)
         } else if let data = data,
-            let response = response as? HTTPURLResponse,
-            response.statusCode == 200 {
-            completion?(data)
+            let response = response as? HTTPURLResponse {
+            print("STATUS CODE: \(response.statusCode)")
+            if (response.statusCode == 200) {
+                completion?(data)
+            } else if (response.statusCode == 404) {
+                onError?(ChallongeError.fourOhFour)
+            } else {
+                print("OTHER EEERRROROR: \(response.statusCode)")
+            }
         } else {
             onError?(ChallongeError.unknown)
         }

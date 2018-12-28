@@ -12,9 +12,10 @@ public struct RootMatch: Codable {
 }
 
 public struct Match: Codable {
-    enum State: String, Codable {
+    public enum State: String, Codable {
         case open
         case pending
+        case complete
     }
     
     enum CodingKeys: String, CodingKey {
@@ -24,13 +25,34 @@ public struct Match: Codable {
         case tournamentId = "tournament_id"
         case winnerId = "winner_id"
         case scoresCsv = "scores_csv"
+        case suggestedPlayOrder = "suggested_play_order"
+        case player1Votes = "player1_votes"
+        case player2Votes = "player2_votes"
     }
     
-    let id: Int
-    let player1Id: Int?
-    let player2Id: Int?
-    let state: State
-    let tournamentId: Int
-    let winnerId: Int?
-    let scoresCsv: String?
+    public let id: Int
+    public let player1Id: Int?
+    public let player2Id: Int?
+    public let state: State
+    public let tournamentId: Int
+    public let winnerId: Int?
+    public let scoresCsv: String?
+    public let suggestedPlayOrder: Int
+    public let player1Votes: Int?
+    public let player2Votes: Int?
+    
+    public var scores: Dictionary<Int, String>? {
+        guard let player1Id = player1Id, let player2Id = player2Id, let splitScore = scoresCsv?.split(separator: "-"), splitScore.count > 0 else {
+            return nil
+        }
+        return [player1Id: String(splitScore[0]), player2Id: String(splitScore[1])]
+    }
+    
+    public var votes: Dictionary<Int, Int>? {
+        guard let player1Id = player1Id, let player2Id = player2Id, let player1Votes = player1Votes, let player2Votes = player2Votes else {
+            return nil
+        }
+        
+        return [player1Id: player1Votes, player2Id: player2Votes]
+    }
 }

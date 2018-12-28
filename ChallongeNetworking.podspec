@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChallongeNetworking'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Swift library to integrate with the Challonge API.'
 
 
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = "4.2"
 
-  s.source_files = 'ChallongeNetworking/Classes/**/*'
+  s.source_files = 'Source/**/*.{swift}'
 end

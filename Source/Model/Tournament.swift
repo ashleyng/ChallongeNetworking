@@ -12,15 +12,27 @@ struct RootTournament: Codable {
 }
 
 public struct Tournament: Codable {
-    enum State: String, Codable {
-        case all
-        case pending
-        case inProgress
-        case ended
-        case underway
+    public enum State: String, Codable {
+        case pending // hasn't started yet
+        case complete
+        case underway // currently live
+        case awaiting_review // waiting for tournament to be finalized
+
+        public var readableStatus: String {
+            switch self {
+            case .pending:
+                return "Not Started"
+            case .complete:
+                return "Completed"
+            case .underway:
+                return "Live"
+            case .awaiting_review:
+                return "Needs Review"
+            }
+        }
     }
     
-    enum TournamentType: String, Codable {
+    public enum TournamentType: String, Codable {
         case singleElimination = "single elimination"
         case doubleElimination = "double elimination"
         case roundRobin = "round robin"
@@ -38,15 +50,15 @@ public struct Tournament: Codable {
         case liveImageUrl = "live_image_url"
     }
     
-    let dateCreated: String
-    let description: String
-    let gameId: Int?
-    let id: Int
-    let name: String
-    let participantsCount: Int
-    let state: State
-    let tournamentType: TournamentType
-    let updatedAt: String
-    let url: URL
-    let liveImageUrl: URL
+    public let dateCreated: String
+    public let description: String
+    public let gameId: Int?
+    public let id: Int
+    public let name: String
+    public let participantsCount: Int
+    public let state: State
+    public let tournamentType: TournamentType
+    public let updatedAt: String
+    public let url: URL
+    public let liveImageUrl: URL
 }
