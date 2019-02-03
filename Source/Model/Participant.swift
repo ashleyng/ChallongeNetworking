@@ -38,8 +38,8 @@ public struct Participant: Codable {
         mainId = try values.decode(Int.self, forKey: .mainId)
         name = try values.decode(String.self, forKey: .name)
         tournamentId = try values.decode(Int.self, forKey: .tournamentId)
-        icon = try values.decode(String.self, forKey: .tournamentId)
-        groupPlayerIdsArray = try values.decode(Array.self, forKey: .groupPlayerIdsArray)
+        icon = try values.decodeIfPresent(String.self, forKey: .icon)
+        groupPlayerIdsArray = try values.decode([Int].self, forKey: .groupPlayerIdsArray)
         var groupIdCopy = groupPlayerIdsArray
         groupIdCopy.append(mainId)
         id = Id(main: mainId, group: groupPlayerIdsArray, all: groupIdCopy)
