@@ -16,12 +16,14 @@ public struct Participant: Codable {
     enum CodingKeys: String, CodingKey {
         case id, name, icon
         case tournamentId = "tournament_id"
+        case groupPlayerIds = "group_player_ids"
     }
     
     public let id: Int
     public let name: String
     public let tournamentId: Int
     public let icon: String?
+    public let groupPlayerIds: [Int]
     
 }
 

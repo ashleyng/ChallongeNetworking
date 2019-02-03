@@ -16,6 +16,7 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
         case getParticipants = "Get Participants for Tournament"
         case getMatches = "Get Matches for Tournament"
         case getMatch = "Get Match for Tournament"
+        case putMatchScore = "Put Match Score For Tournament"
     }
     
     let endpoints:[Endpoint] = [
@@ -23,7 +24,8 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
         .getTournament,
         .getParticipants,
         .getMatches,
-        .getMatch
+        .getMatch,
+        .putMatchScore
     ]
     
     let networking: ChallongeNetworking
@@ -170,6 +172,8 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
                 })
             }
             self.present(alert, animated: true, completion: nil)
+        case .putMatchScore:
+            break
         }
     }
     

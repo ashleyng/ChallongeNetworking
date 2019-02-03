@@ -17,6 +17,7 @@ public struct Tournament: Codable {
         case complete
         case underway // currently live
         case awaiting_review // waiting for tournament to be finalized
+        case group_stages_underway
 
         public var readableStatus: String {
             switch self {
@@ -24,7 +25,7 @@ public struct Tournament: Codable {
                 return "Not Started"
             case .complete:
                 return "Completed"
-            case .underway:
+            case .underway, .group_stages_underway:
                 return "Live"
             case .awaiting_review:
                 return "Needs Review"

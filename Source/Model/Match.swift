@@ -37,7 +37,7 @@ public struct Match: Codable {
     public let tournamentId: Int
     public let winnerId: Int?
     public let scoresCsv: String?
-    public let suggestedPlayOrder: Int
+    public let suggestedPlayOrder: Int?
     public let player1Votes: Int?
     public let player2Votes: Int?
     
