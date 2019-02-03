@@ -28,6 +28,8 @@ public class ChallongeNetworking {
         self.baseUrlString = "https://\(username):\(apiKey)@api.challonge.com/v1/\(Entity.tournaments)"
     }
     
+    /// Checkes if the saved credentials are correct
+    /// and returns the status code from the server
     public func checkCredentials(completion: @escaping (Int?) -> Void) {
         dataTask?.cancel()
         defer {
@@ -50,6 +52,7 @@ public class ChallongeNetworking {
         }
     }
 
+    /// Fetches all the tournaments for the given user
     public func getAllTournaments(completion: (([Tournament]) -> Void)? = nil,
                                   onError: ((Error) -> Void)? = nil) {
         dataTask?.cancel()
@@ -76,6 +79,8 @@ public class ChallongeNetworking {
         }
     }
     
+    /// Gets the tournament for a tournament Id.
+    /// Default fetch does not include information on it's participants or matches.
     public func getTournament(_ id: String,
                               includeParticipants: Bool = false,
                               includeMatches: Bool = false,
@@ -109,6 +114,7 @@ public class ChallongeNetworking {
         }
     }
     
+    /// Gets all the participants for a given TournamentId
     public func getParticipantsForTournament(_ id: Int,
                                              completion: (([Participant]) -> Void)? = nil,
                                              onError: ((Error) -> Void)? = nil) {
@@ -135,6 +141,8 @@ public class ChallongeNetworking {
         }
     }
     
+    
+    /// Gets all the matches for a given TournamentId
     public func getMatchesForTournament(_ id: Int,
                                         completion: (([Match]) -> Void)? = nil,
                                         onError: ((Error) -> Void)? = nil) {
@@ -161,6 +169,7 @@ public class ChallongeNetworking {
         }
     }
     
+    /// Gets a match's information for given tournament Id and associated match Id
     public func getSingleMatchForTournament(_ tournamentId: Int,
                                             matchId: Int,
                                             completion: ((Match) -> Void)? = nil,
@@ -188,6 +197,8 @@ public class ChallongeNetworking {
         }
     }
     
+    /// Sets the winner for a match with the participants Id
+    /// The score is set as "player1Score-player2Score"
     public func setWinnerForMatch(_ tournamentId: Int,
                                   matchId: Int,
                                   winnderId: Int,
