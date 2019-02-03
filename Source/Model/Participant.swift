@@ -14,16 +14,36 @@ public struct RootParticipant: Codable {
 public struct Participant: Codable {
     
     enum CodingKeys: String, CodingKey {
-        case id, name, icon
+        case name, icon
+        case mainId = "id"
         case tournamentId = "tournament_id"
-        case groupPlayerIds = "group_player_ids"
+        case groupPlayerIdsArray = "group_player_ids"
     }
     
-    public let id: Int
+    public struct Id {
+        public let main: Int
+        public let group: [Int]
+        public let all: [Int]
+    }
+    
+    private let mainId: Int
     public let name: String
     public let tournamentId: Int
     public let icon: String?
-    public let groupPlayerIds: [Int]
+    private let groupPlayerIdsArray: [Int]
+    public let id: Id
     
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        mainId = try values.decode(Int.self, forKey: .mainId)
+        name = try values.decode(String.self, forKey: .name)
+        tournamentId = try values.decode(Int.self, forKey: .tournamentId)
+        icon = try values.decode(String.self, forKey: .tournamentId)
+        groupPlayerIdsArray = try values.decode(Array.self, forKey: .groupPlayerIdsArray)
+        var groupIdCopy = groupPlayerIdsArray
+        groupIdCopy.append(mainId)
+        id = Id(main: mainId, group: groupPlayerIdsArray, all: groupIdCopy)
+    }
 }
+
 
