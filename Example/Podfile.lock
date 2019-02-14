@@ -1,16 +1,35 @@
 PODS:
-  - ChallongeNetworking (0.1.0)
+  - ChallongeNetworking (0.3.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
 
 DEPENDENCIES:
   - ChallongeNetworking (from `../`)
+  - OHHTTPStubs/Swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OHHTTPStubs
 
 EXTERNAL SOURCES:
   ChallongeNetworking:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ChallongeNetworking: eccbfcaa6032dc17dc7407c9416ce634b0b349e7
+  ChallongeNetworking: 5d05301c422305b875662b8ab96bc0f87cf24acb
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
 
-PODFILE CHECKSUM: 49a5989be7b56200e800533234284ed622cb0637
+PODFILE CHECKSUM: 8a84c1f8c9defe147e172cc9f37dde0b5a2f36bd
 
 COCOAPODS: 1.5.3

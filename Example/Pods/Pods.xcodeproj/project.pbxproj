@@ -7,20 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27D7E82392BE6AF61D4CE72E18A8D100 /* Pods-ChallongeNetworking_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4C155333339B9ACDFC0AD9E0F67DF /* Pods-ChallongeNetworking_Tests-dummy.m */; };
+		001F774C7FCE342E1F33245FD51AE64D /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424F787CFAA03CA01909EA3EEE86186 /* OHHTTPStubs.m */; };
+		049858CC9BE5EA7604D05EFA7F153E8B /* Pods-ChallongeNetworking_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E652982D0B5C45A99886EA6EC3A8E284 /* Pods-ChallongeNetworking_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0537403405D34D7943A58FF3383A89A3 /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B87DA15BCC73A4D7D7138CD2C57F55C /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		117395D01D060D69FB0BA68458311D48 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C73FA2256736D5E2C54DCE3B7E292AC /* OHHTTPStubsSwift.swift */; };
+		16042495655A9A96C15E2F237B13AC27 /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF10424F0C8D4742C67AC5ABE52C4683 /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25BABC092CECBB3992EB9E09FFB03F3A /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260888AA57A0768E7B105BABDD7F5DEE /* Participant.swift */; };
+		2DE989DE028FDDF17B823DF041F639C3 /* OHHTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CD733DF41BE71FB6B74A1B41869CBB80 /* OHHTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35A7EC6222114E63326AFD86B334B441 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BE185E0C8DEB5DC90BF79736BECCE1 /* Match.swift */; };
+		36B2C2402BBBDC443FD365B5A50639F3 /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1253121AF65EBBBBB6B92B2FD862298D /* OHHTTPStubsResponse+JSON.m */; };
+		374FDB7789245E46F304D314CEEC6AB1 /* OHPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 17343864BC0907F6437EFC72703A8F21 /* OHPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F4466E323C5B98E199206BFBCF7CEDA /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FF59ACDE0BF0D2DED3980DF7F59F29 /* OHPathHelpers.m */; };
+		407CC320A94B656BFF82445B110D6FF2 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD98667E28D6CFC13BCB8ABEB2C0A903 /* OHHTTPStubs-dummy.m */; };
 		4BB385392280E961E416F244A11558ED /* Pods-ChallongeNetworking_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84274EDDE4B2CC3D3F06137F4A21386C /* Pods-ChallongeNetworking_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E51AD5FF942DA9AF2A20D043AACCCFA /* Pods-ChallongeNetworking_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E652982D0B5C45A99886EA6EC3A8E284 /* Pods-ChallongeNetworking_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AC5F30BD4EF2F19C2EBADF2164F8575 /* ChallongeNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EEC6D926AB58719A351AF2C804EEE2 /* ChallongeNetworking-dummy.m */; };
+		4CBC26094CDAEC14BBF87AB712D5926B /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886F4176EE2D6EBE4A76C6124724F8B /* OHHTTPStubsResponse.m */; };
+		507FFC00D4099044150292FC22F67C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
+		65A7146D7A2047FBF3911AFAED3397DE /* OHHTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D98969FB41FB4495D5FA1883CCFA90 /* OHHTTPStubsMethodSwizzling.m */; };
+		75A1F14EE25BF8F5C433E97CBEDA5274 /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9EFD33B0ADF6994F77B36708D079C /* NSURLRequest+HTTPBodyTesting.m */; };
+		7AD16893CED59D411922B06B9C0E7B3D /* Pods-ChallongeNetworking_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4C155333339B9ACDFC0AD9E0F67DF /* Pods-ChallongeNetworking_Tests-dummy.m */; };
+		854145BAC46DFE6263AF6A4B92EEF71B /* ChallongeNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B96B96CD36E9454C88C9BED36D9A68 /* ChallongeNetworking-dummy.m */; };
 		873629AEE6062BE4D259B1FF010692CB /* Pods-ChallongeNetworking_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE065A517E2B7477B795463EBB85A50 /* Pods-ChallongeNetworking_Example-dummy.m */; };
-		A0FB9BAAE83513421826F66B7AC4EE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A6C24C7E8F92A2BD1B8934FB70D1C797 /* ChallongeNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9868B6292B630E9DF785D26EC1015C5D /* ChallongeNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B008F019527AD687F8E1BB78478905A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D8030EB2219D038F00283C97 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB1219D038F00283C97 /* Tournament.swift */; };
-		D8030EB4219D03AC00283C97 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB3219D03AC00283C97 /* Participant.swift */; };
-		D8030EB7219D03C000283C97 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB6219D03C000283C97 /* Match.swift */; };
-		D8030EB9219D03E700283C97 /* ChallongeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EB8219D03E700283C97 /* ChallongeNetworking.swift */; };
-		D880666721B7666C00FDFDA0 /* UpdateMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D880666621B7666C00FDFDA0 /* UpdateMatch.swift */; };
-		E8226A9428B52BDDDD236CE9621255B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A0FB9BAAE83513421826F66B7AC4EE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
+		A71CBFF79093918592439EFBE334A44A /* ChallongeNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1185AB7C723035A381928393451103ED /* ChallongeNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9DE765341DB3685950C45B2FCEE05F /* ChallongeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D4BC3BA82300DADF3E63134B3D9C15 /* ChallongeNetworking.swift */; };
+		AFCE0E469AF433DDC73D2C91BC75FC7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
+		BC862D35CFFAA4BEA2F6E6C464F27295 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B321972C749BBF31E3A16C3D1F09075A /* OHHTTPStubs+NSURLSessionConfiguration.m */; };
+		BFC5E36CF24B525D114459BB05430145 /* OHHTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CFDA63893AE5C4E3EE603A05EF60172 /* OHHTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C0638C15B91A831A4B790057D02D2678 /* UpdateMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35561DF21EB791227B7AF54A9EAEC5 /* UpdateMatch.swift */; };
+		DE7422B33CB514ABF6E341418B48384A /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 09037DCB9A9E7F6D9ABDF854E18B3F95 /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4FF594A623C26DE794086439F340EC7 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD6B68A071CF12A4DC60BEE3842678 /* Tournament.swift */; };
+		EA516321CC31E8F0D46CB75EBBEBFBAE /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EE4C0594FE3A8052E7859D33444F20 /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1C658F10E41397D7C37E418124A55F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
+		F6EDE3AE485893403E9524C380480210 /* NSURLRequest+HTTPBodyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F6EEEF3526A00FD366830132C49AC0 /* NSURLRequest+HTTPBodyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F89C5BBD04C67D5FA0D7354DD3F5C750 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6757C44D1A8B62FD3A7062E345EA7F6 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,61 +47,99 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E8C15E2BD45C0A0EA9CF14CA9316BFF;
+			remoteGlobalIDString = 011957462979B667EB5E2E13ADDAC5FD;
 			remoteInfo = ChallongeNetworking;
 		};
-		C04B41BC7D9CC850DE0BE2C2D3538FCA /* PBXContainerItemProxy */ = {
+		B4325B2C4994BF6F9CDB0E9813AFE88D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5FF79C355826DCE34B2EDC0AE7A03967;
-			remoteInfo = "Pods-ChallongeNetworking_Example";
+			remoteGlobalIDString = 011957462979B667EB5E2E13ADDAC5FD;
+			remoteInfo = ChallongeNetworking;
+		};
+		DE4462363275D41BBC8E5F5158442E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DC2300AFD29465BDBFF705AFF657F5;
+			remoteInfo = OHHTTPStubs;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02536430D9E6527CD262F8155A3F6EA2 /* OHHTTPStubs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-prefix.pch"; sourceTree = "<group>"; };
+		03BE185E0C8DEB5DC90BF79736BECCE1 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		0424F787CFAA03CA01909EA3EEE86186 /* OHHTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubs.m; path = OHHTTPStubs/Sources/OHHTTPStubs.m; sourceTree = "<group>"; };
 		04D90E5E1833EAE9096898D7EB625AAA /* Pods-ChallongeNetworking_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Tests-resources.sh"; sourceTree = "<group>"; };
-		104C89844CCFCE11FF57575412230FD2 /* ChallongeNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ChallongeNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		12EEC6D926AB58719A351AF2C804EEE2 /* ChallongeNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChallongeNetworking-dummy.m"; sourceTree = "<group>"; };
+		0768627F23CFFEF5E99D3DC5F0ADBF0D /* OHHTTPStubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.xcconfig; sourceTree = "<group>"; };
+		09037DCB9A9E7F6D9ABDF854E18B3F95 /* OHHTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+JSON.h"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
+		09B11B444D4E139AB1372502226A552C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1185AB7C723035A381928393451103ED /* ChallongeNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChallongeNetworking-umbrella.h"; sourceTree = "<group>"; };
+		1253121AF65EBBBBB6B92B2FD862298D /* OHHTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+JSON.m"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
+		17343864BC0907F6437EFC72703A8F21 /* OHPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHPathHelpers.h; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h; sourceTree = "<group>"; };
+		1886F4176EE2D6EBE4A76C6124724F8B /* OHHTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsResponse.m; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.m; sourceTree = "<group>"; };
 		1BA4C155333339B9ACDFC0AD9E0F67DF /* Pods-ChallongeNetworking_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChallongeNetworking_Tests-dummy.m"; sourceTree = "<group>"; };
+		1C73FA2256736D5E2C54DCE3B7E292AC /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
+		20EE4C0594FE3A8052E7859D33444F20 /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = OHHTTPStubs/Sources/Compatibility.h; sourceTree = "<group>"; };
 		23681D7CA22880062FB35CC8E9946D37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CE7929202E62289AE63F4F240E69D3 /* ChallongeNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChallongeNetworking.framework; path = ChallongeNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D618A094CFC2509A20994096DC24F6 /* Pods-ChallongeNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChallongeNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2EF3083D0A6111E3B361FF1C69FCA0CE /* ChallongeNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChallongeNetworking.modulemap; sourceTree = "<group>"; };
+		24B96B96CD36E9454C88C9BED36D9A68 /* ChallongeNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChallongeNetworking-dummy.m"; sourceTree = "<group>"; };
+		260888AA57A0768E7B105BABDD7F5DEE /* Participant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		32C3F8EC10DE0FEDED92CF0C7E4FD968 /* Pods-ChallongeNetworking_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		38FF59ACDE0BF0D2DED3980DF7F59F29 /* OHPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHPathHelpers.m; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.m; sourceTree = "<group>"; };
 		3DAAA2C131AA351C9840AEF0F8C4A5CE /* Pods-ChallongeNetworking_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChallongeNetworking_Tests.modulemap"; sourceTree = "<group>"; };
-		4097DDC48E2CE6BCF136D1D8E17CA813 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD9EFD33B0ADF6994F77B36708D079C /* NSURLRequest+HTTPBodyTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyTesting.m"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.m"; sourceTree = "<group>"; };
+		3FA46772EF8B955D786FAB3AB25486C1 /* ChallongeNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChallongeNetworking.xcconfig; sourceTree = "<group>"; };
 		4EE065A517E2B7477B795463EBB85A50 /* Pods-ChallongeNetworking_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChallongeNetworking_Example-dummy.m"; sourceTree = "<group>"; };
 		4F27B864FB6EEE764435CD1579608F80 /* Pods-ChallongeNetworking_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Example-resources.sh"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		546BA846CC4E3C44FCD780694CBEBD84 /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
+		59D4BC3BA82300DADF3E63134B3D9C15 /* ChallongeNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallongeNetworking.swift; path = Source/ChallongeNetworking.swift; sourceTree = "<group>"; };
+		5C5218E4FAF4396F0F70BCB880E1A6F5 /* ChallongeNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ChallongeNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5D81A5F1AAD5C83B60409D759C5C9C61 /* Pods-ChallongeNetworking_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5E01312904FAF587B446FBF0F986B88C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7133518842AE17EEA6B5D0562905E5B5 /* Pods-ChallongeNetworking_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChallongeNetworking_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		78F0C548CA559DE2CFCFCC98C206CBD2 /* Pods_ChallongeNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallongeNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AEA675D8850CE808DF0EAA5DCC92678 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74A859FCEA3BF80FD22638D0E6429939 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CAC986EA1D039404D9841E384B56D21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7CFDA63893AE5C4E3EE603A05EF60172 /* OHHTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsMethodSwizzling.h; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
 		7F5B94D6239D58D17F720D8DC3BC489D /* Pods-ChallongeNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChallongeNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		84274EDDE4B2CC3D3F06137F4A21386C /* Pods-ChallongeNetworking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChallongeNetworking_Example-umbrella.h"; sourceTree = "<group>"; };
 		84E631C0D1D48758EE0FA62B7A944AE9 /* Pods-ChallongeNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChallongeNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		84F45D151CB715385F865F7CE304F304 /* Pods-ChallongeNetworking_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChallongeNetworking_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		874B38AF7DEBAA3869ECA7C826ED9476 /* ChallongeNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChallongeNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CD6B68A071CF12A4DC60BEE3842678 /* Tournament.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		89DC365FEF314CAE9760892B813E187E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8B06D536605F35A1792F7714F325ED18 /* Pods-ChallongeNetworking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChallongeNetworking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8B8C36876278810FFF538C8AE1FD9F77 /* Pods_ChallongeNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallongeNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EF0A013AEB3C882953EC638A7E17D0D /* ChallongeNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChallongeNetworking.xcconfig; sourceTree = "<group>"; };
-		910EE41E5E1D0A69BEA33D859F30CF74 /* ChallongeNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChallongeNetworking-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9868B6292B630E9DF785D26EC1015C5D /* ChallongeNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChallongeNetworking-umbrella.h"; sourceTree = "<group>"; };
+		8B87DA15BCC73A4D7D7138CD2C57F55C /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
+		922D237E9C18F0BC3E7DAB5D8483FA99 /* Pods_ChallongeNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChallongeNetworking_Tests.framework; path = "Pods-ChallongeNetworking_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D98969FB41FB4495D5FA1883CCFA90 /* OHHTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsMethodSwizzling.m; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
+		A66F40FE0633924078F749F24B38AE07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0A1025A5C0ACB10AD584521F4FF7F85 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChallongeNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B321972C749BBF31E3A16C3D1F09075A /* OHHTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubs+NSURLSessionConfiguration.m"; path = "OHHTTPStubs/Sources/NSURLSession/OHHTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
 		B3F88068734BCFE576A77F5F9F52AD90 /* Pods-ChallongeNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChallongeNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C6757C44D1A8B62FD3A7062E345EA7F6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		CD733DF41BE71FB6B74A1B41869CBB80 /* OHHTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsResponse.h; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.h; sourceTree = "<group>"; };
+		CD98667E28D6CFC13BCB8ABEB2C0A903 /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
 		CD9C42222D6C3D401B4EFCD3E73F6480 /* Pods-ChallongeNetworking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChallongeNetworking_Example.modulemap"; sourceTree = "<group>"; };
-		D8030EB1219D038F00283C97 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
-		D8030EB3219D03AC00283C97 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
-		D8030EB6219D03C000283C97 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		D8030EB8219D03E700283C97 /* ChallongeNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallongeNetworking.swift; sourceTree = "<group>"; };
-		D880666621B7666C00FDFDA0 /* UpdateMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMatch.swift; sourceTree = "<group>"; };
-		E36E326EAD2171516A8B2D0328A40CAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D47232960CF657D24AE7267527A946BA /* ChallongeNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChallongeNetworking.modulemap; sourceTree = "<group>"; };
+		D7F6EEEF3526A00FD366830132C49AC0 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
+		D9BD0D5E058C500FA93358FE68EF83A8 /* Pods_ChallongeNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChallongeNetworking_Example.framework; path = "Pods-ChallongeNetworking_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA849E207F8FBF361C39DA1D75983EFA /* ChallongeNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChallongeNetworking-prefix.pch"; sourceTree = "<group>"; };
 		E652982D0B5C45A99886EA6EC3A8E284 /* Pods-ChallongeNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChallongeNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FB35561DF21EB791227B7AF54A9EAEC5 /* UpdateMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UpdateMatch.swift; sourceTree = "<group>"; };
 		FEA225E6298DC79061F46255287603CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF10424F0C8D4742C67AC5ABE52C4683 /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C9260906EAA4457FE860249B6D2FA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C658F10E41397D7C37E418124A55F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40C0AAC30930524A8A384B7DDDF60EAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,75 +148,149 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C2992F54EB3F382057DE78A5B5CD25C /* Frameworks */ = {
+		4C9707A17D0C3936E4A0B8323D17DFE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8226A9428B52BDDDD236CE9621255B9 /* Foundation.framework in Frameworks */,
+				F89C5BBD04C67D5FA0D7354DD3F5C750 /* CFNetwork.framework in Frameworks */,
+				507FFC00D4099044150292FC22F67C6B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		660D7B35EDD7174C38AAB08579AD80D8 /* Frameworks */ = {
+		9C9A48F276F43E5C8B0704C23BDF9F90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B008F019527AD687F8E1BB78478905A3 /* Foundation.framework in Frameworks */,
+				AFCE0E469AF433DDC73D2C91BC75FC7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		413614E45E9ACE78F1BC20C6C0C6BD2C /* Support Files */ = {
+		027AC355BC7749B83906323DC9D763FF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EF3083D0A6111E3B361FF1C69FCA0CE /* ChallongeNetworking.modulemap */,
-				8EF0A013AEB3C882953EC638A7E17D0D /* ChallongeNetworking.xcconfig */,
-				12EEC6D926AB58719A351AF2C804EEE2 /* ChallongeNetworking-dummy.m */,
-				910EE41E5E1D0A69BEA33D859F30CF74 /* ChallongeNetworking-prefix.pch */,
-				9868B6292B630E9DF785D26EC1015C5D /* ChallongeNetworking-umbrella.h */,
-				4097DDC48E2CE6BCF136D1D8E17CA813 /* Info.plist */,
+				D47232960CF657D24AE7267527A946BA /* ChallongeNetworking.modulemap */,
+				3FA46772EF8B955D786FAB3AB25486C1 /* ChallongeNetworking.xcconfig */,
+				24B96B96CD36E9454C88C9BED36D9A68 /* ChallongeNetworking-dummy.m */,
+				DA849E207F8FBF361C39DA1D75983EFA /* ChallongeNetworking-prefix.pch */,
+				1185AB7C723035A381928393451103ED /* ChallongeNetworking-umbrella.h */,
+				A66F40FE0633924078F749F24B38AE07 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ChallongeNetworking";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		0CF07997FCEE32385B5DF37FBCDFB972 /* OHPathHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				17343864BC0907F6437EFC72703A8F21 /* OHPathHelpers.h */,
+				38FF59ACDE0BF0D2DED3980DF7F59F29 /* OHPathHelpers.m */,
 			);
-			name = iOS;
+			name = OHPathHelpers;
 			sourceTree = "<group>";
 		};
-		710CFF72E626D55E268C7B9A68A9DA10 /* Development Pods */ = {
+		0DCDA257814248266B5E2CF8FC0DC609 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				81C902BE10ADAFE69689DCD4034F0E3D /* ChallongeNetworking */,
+				03BE185E0C8DEB5DC90BF79736BECCE1 /* Match.swift */,
+				260888AA57A0768E7B105BABDD7F5DEE /* Participant.swift */,
+				86CD6B68A071CF12A4DC60BEE3842678 /* Tournament.swift */,
+				FB35561DF21EB791227B7AF54A9EAEC5 /* UpdateMatch.swift */,
+			);
+			name = Model;
+			path = Source/Model;
+			sourceTree = "<group>";
+		};
+		20AF50A7D46C4A9D11E67F783A30F20E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				09037DCB9A9E7F6D9ABDF854E18B3F95 /* OHHTTPStubsResponse+JSON.h */,
+				1253121AF65EBBBBB6B92B2FD862298D /* OHHTTPStubsResponse+JSON.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		2883780418311D0678DDC3540C038163 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				718B02A80A27D3CD58AA370E1F3C6193 /* ChallongeNetworking */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		313663979D17F8B24195DA59C60955A8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5C5218E4FAF4396F0F70BCB880E1A6F5 /* ChallongeNetworking.podspec */,
+				09B11B444D4E139AB1372502226A552C /* LICENSE */,
+				7CAC986EA1D039404D9841E384B56D21 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52304B3F0670EE0236B3F34A532CB30 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		472063079F40A55F2C88661CBB12A91B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				20EE4C0594FE3A8052E7859D33444F20 /* Compatibility.h */,
+				8B87DA15BCC73A4D7D7138CD2C57F55C /* OHHTTPStubs.h */,
+				0424F787CFAA03CA01909EA3EEE86186 /* OHHTTPStubs.m */,
+				CD733DF41BE71FB6B74A1B41869CBB80 /* OHHTTPStubsResponse.h */,
+				1886F4176EE2D6EBE4A76C6124724F8B /* OHHTTPStubsResponse.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4EC73053DFFE0DE14B6CCCBA9FAA1B53 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				1C73FA2256736D5E2C54DCE3B7E292AC /* OHHTTPStubsSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		718B02A80A27D3CD58AA370E1F3C6193 /* ChallongeNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				59D4BC3BA82300DADF3E63134B3D9C15 /* ChallongeNetworking.swift */,
+				0DCDA257814248266B5E2CF8FC0DC609 /* Model */,
+				313663979D17F8B24195DA59C60955A8 /* Pod */,
+				027AC355BC7749B83906323DC9D763FF /* Support Files */,
+			);
+			name = ChallongeNetworking;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		725AAE760EB297BCF6478BC9BC92CC9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23CE7929202E62289AE63F4F240E69D3 /* ChallongeNetworking.framework */,
+				74A859FCEA3BF80FD22638D0E6429939 /* OHHTTPStubs.framework */,
+				D9BD0D5E058C500FA93358FE68EF83A8 /* Pods_ChallongeNetworking_Example.framework */,
+				922D237E9C18F0BC3E7DAB5D8483FA99 /* Pods_ChallongeNetworking_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				710CFF72E626D55E268C7B9A68A9DA10 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C0F9F86F7B90E8DE5F86D442CF85F23A /* Products */,
+				2883780418311D0678DDC3540C038163 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C457C60CD84E0A113CFDA784ADD94314 /* Pods */,
+				725AAE760EB297BCF6478BC9BC92CC9C /* Products */,
 				E7601C324F0557C0067FB8A7407D2A18 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		81C902BE10ADAFE69689DCD4034F0E3D /* ChallongeNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				D8030EAF219D034500283C97 /* Source */,
-				F99242B003B3D363823D7C3E38B83853 /* Pod */,
-				413614E45E9ACE78F1BC20C6C0C6BD2C /* Support Files */,
-			);
-			name = ChallongeNetworking;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		9C1EC0748351967C897EB24FB29B9CCE /* Pods-ChallongeNetworking_Example */ = {
@@ -180,42 +311,61 @@
 			path = "Target Support Files/Pods-ChallongeNetworking_Example";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A9D34BD6CB8C90812507BD7F37F7FF23 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				5E01312904FAF587B446FBF0F986B88C /* Info.plist */,
+				546BA846CC4E3C44FCD780694CBEBD84 /* OHHTTPStubs.modulemap */,
+				0768627F23CFFEF5E99D3DC5F0ADBF0D /* OHHTTPStubs.xcconfig */,
+				CD98667E28D6CFC13BCB8ABEB2C0A903 /* OHHTTPStubs-dummy.m */,
+				02536430D9E6527CD262F8155A3F6EA2 /* OHHTTPStubs-prefix.pch */,
+				FF10424F0C8D4742C67AC5ABE52C4683 /* OHHTTPStubs-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/OHHTTPStubs";
 			sourceTree = "<group>";
 		};
-		C0F9F86F7B90E8DE5F86D442CF85F23A /* Products */ = {
+		BA10DF476A05F5F40800C98E251F306A /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				874B38AF7DEBAA3869ECA7C826ED9476 /* ChallongeNetworking.framework */,
-				8B8C36876278810FFF538C8AE1FD9F77 /* Pods_ChallongeNetworking_Example.framework */,
-				78F0C548CA559DE2CFCFCC98C206CBD2 /* Pods_ChallongeNetworking_Tests.framework */,
+				D7F6EEEF3526A00FD366830132C49AC0 /* NSURLRequest+HTTPBodyTesting.h */,
+				3DD9EFD33B0ADF6994F77B36708D079C /* NSURLRequest+HTTPBodyTesting.m */,
+				B321972C749BBF31E3A16C3D1F09075A /* OHHTTPStubs+NSURLSessionConfiguration.m */,
+				7CFDA63893AE5C4E3EE603A05EF60172 /* OHHTTPStubsMethodSwizzling.h */,
+				A1D98969FB41FB4495D5FA1883CCFA90 /* OHHTTPStubsMethodSwizzling.m */,
 			);
-			name = Products;
+			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		D8030EAF219D034500283C97 /* Source */ = {
+		C045071FFB116B1856157A3B00E9932D /* OHHTTPStubs */ = {
 			isa = PBXGroup;
 			children = (
-				D8030EB0219D038000283C97 /* Model */,
-				D8030EB8219D03E700283C97 /* ChallongeNetworking.swift */,
+				472063079F40A55F2C88661CBB12A91B /* Core */,
+				20AF50A7D46C4A9D11E67F783A30F20E /* JSON */,
+				BA10DF476A05F5F40800C98E251F306A /* NSURLSession */,
+				0CF07997FCEE32385B5DF37FBCDFB972 /* OHPathHelpers */,
+				A9D34BD6CB8C90812507BD7F37F7FF23 /* Support Files */,
+				4EC73053DFFE0DE14B6CCCBA9FAA1B53 /* Swift */,
 			);
-			path = Source;
+			name = OHHTTPStubs;
+			path = OHHTTPStubs;
 			sourceTree = "<group>";
 		};
-		D8030EB0219D038000283C97 /* Model */ = {
+		C457C60CD84E0A113CFDA784ADD94314 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D8030EB1219D038F00283C97 /* Tournament.swift */,
-				D8030EB3219D03AC00283C97 /* Participant.swift */,
-				D8030EB6219D03C000283C97 /* Match.swift */,
-				D880666621B7666C00FDFDA0 /* UpdateMatch.swift */,
+				C045071FFB116B1856157A3B00E9932D /* OHHTTPStubs */,
 			);
-			path = Model;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D52304B3F0670EE0236B3F34A532CB30 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C6757C44D1A8B62FD3A7062E345EA7F6 /* CFNetwork.framework */,
+				89DC365FEF314CAE9760892B813E187E /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E7601C324F0557C0067FB8A7407D2A18 /* Targets Support Files */ = {
@@ -225,16 +375,6 @@
 				FEA29726D1F24A63029642851A74C2C3 /* Pods-ChallongeNetworking_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F99242B003B3D363823D7C3E38B83853 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				104C89844CCFCE11FF57575412230FD2 /* ChallongeNetworking.podspec */,
-				E36E326EAD2171516A8B2D0328A40CAC /* LICENSE */,
-				7AEA675D8850CE808DF0EAA5DCC92678 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		FEA29726D1F24A63029642851A74C2C3 /* Pods-ChallongeNetworking_Tests */ = {
@@ -258,19 +398,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		19CD0774C4DFBE33F53C00E91D6E8420 /* Headers */ = {
+		6653B5BED70F80A3136D13C7B8336652 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E51AD5FF942DA9AF2A20D043AACCCFA /* Pods-ChallongeNetworking_Tests-umbrella.h in Headers */,
+				049858CC9BE5EA7604D05EFA7F153E8B /* Pods-ChallongeNetworking_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66392FD3213A2D0EF54F39BA37CC1D01 /* Headers */ = {
+		87ECF52F7A734C6B00535BCE8D0AC125 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C24C7E8F92A2BD1B8934FB70D1C797 /* ChallongeNetworking-umbrella.h in Headers */,
+				A71CBFF79093918592439EFBE334A44A /* ChallongeNetworking-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +422,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E115497439A0323239032BEFD607D001 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA516321CC31E8F0D46CB75EBBEBFBAE /* Compatibility.h in Headers */,
+				F6EDE3AE485893403E9524C380480210 /* NSURLRequest+HTTPBodyTesting.h in Headers */,
+				16042495655A9A96C15E2F237B13AC27 /* OHHTTPStubs-umbrella.h in Headers */,
+				0537403405D34D7943A58FF3383A89A3 /* OHHTTPStubs.h in Headers */,
+				BFC5E36CF24B525D114459BB05430145 /* OHHTTPStubsMethodSwizzling.h in Headers */,
+				DE7422B33CB514ABF6E341418B48384A /* OHHTTPStubsResponse+JSON.h in Headers */,
+				2DE989DE028FDDF17B823DF041F639C3 /* OHHTTPStubsResponse.h in Headers */,
+				374FDB7789245E46F304D314CEEC6AB1 /* OHPathHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1E8C15E2BD45C0A0EA9CF14CA9316BFF /* ChallongeNetworking */ = {
+		00F864DA43E4766CF55D4AF3DBD55D68 /* Pods-ChallongeNetworking_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E09980DD7CD7C17914E44CEF29434B4 /* Build configuration list for PBXNativeTarget "ChallongeNetworking" */;
+			buildConfigurationList = 8CDC25BAEAD71C215B75363BC2AD087F /* Build configuration list for PBXNativeTarget "Pods-ChallongeNetworking_Tests" */;
 			buildPhases = (
-				66392FD3213A2D0EF54F39BA37CC1D01 /* Headers */,
-				333D599AC7B469368EE23548C4BC2759 /* Sources */,
-				4C2992F54EB3F382057DE78A5B5CD25C /* Frameworks */,
-				18F3F12A1148AEA1E013E9B081944D7F /* Resources */,
+				6653B5BED70F80A3136D13C7B8336652 /* Headers */,
+				BD225F334C9DA6554C667554EF61986E /* Sources */,
+				9C9A48F276F43E5C8B0704C23BDF9F90 /* Frameworks */,
+				015D001BC52DB76B42C87437DCBC6678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1EA680ED3D5A4C10C8C8191AB268E70 /* PBXTargetDependency */,
+				202B49E1F904A41EB33F858EF4DA2668 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChallongeNetworking_Tests";
+			productName = "Pods-ChallongeNetworking_Tests";
+			productReference = 922D237E9C18F0BC3E7DAB5D8483FA99 /* Pods_ChallongeNetworking_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		011957462979B667EB5E2E13ADDAC5FD /* ChallongeNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B22569BE1711BC8F683DB00B8CC54A32 /* Build configuration list for PBXNativeTarget "ChallongeNetworking" */;
+			buildPhases = (
+				87ECF52F7A734C6B00535BCE8D0AC125 /* Headers */,
+				DF6927AEE48DD66BB380F13ECB218FCD /* Sources */,
+				2C9260906EAA4457FE860249B6D2FA89 /* Frameworks */,
+				A2D00B5BB4FB12F1A376D8466DE440D8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -300,26 +475,25 @@
 			);
 			name = ChallongeNetworking;
 			productName = ChallongeNetworking;
-			productReference = 874B38AF7DEBAA3869ECA7C826ED9476 /* ChallongeNetworking.framework */;
+			productReference = 23CE7929202E62289AE63F4F240E69D3 /* ChallongeNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5D234DD8D8899F57D14C71D9BC2D497A /* Pods-ChallongeNetworking_Tests */ = {
+		27DC2300AFD29465BDBFF705AFF657F5 /* OHHTTPStubs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843D7AEB819926274F9BDE445773AD92 /* Build configuration list for PBXNativeTarget "Pods-ChallongeNetworking_Tests" */;
+			buildConfigurationList = 0AE72FD5116637EF7117829560B65904 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
 			buildPhases = (
-				19CD0774C4DFBE33F53C00E91D6E8420 /* Headers */,
-				F37EEF756F4A2FC040EC2BDAEC43155E /* Sources */,
-				660D7B35EDD7174C38AAB08579AD80D8 /* Frameworks */,
-				DC3DF3B8BB2110A39C93ADA4B21B20B6 /* Resources */,
+				E115497439A0323239032BEFD607D001 /* Headers */,
+				D5D5948766E40B1326C8106CB60390CE /* Sources */,
+				4C9707A17D0C3936E4A0B8323D17DFE3 /* Frameworks */,
+				92CE7B7042FEAD9CDA4A3285996C9EE7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F21A0558CF86472DA54B095B929FDC63 /* PBXTargetDependency */,
 			);
-			name = "Pods-ChallongeNetworking_Tests";
-			productName = "Pods-ChallongeNetworking_Tests";
-			productReference = 78F0C548CA559DE2CFCFCC98C206CBD2 /* Pods_ChallongeNetworking_Tests.framework */;
+			name = OHHTTPStubs;
+			productName = OHHTTPStubs;
+			productReference = 74A859FCEA3BF80FD22638D0E6429939 /* OHHTTPStubs.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5FF79C355826DCE34B2EDC0AE7A03967 /* Pods-ChallongeNetworking_Example */ = {
@@ -338,7 +512,7 @@
 			);
 			name = "Pods-ChallongeNetworking_Example";
 			productName = "Pods-ChallongeNetworking_Example";
-			productReference = 8B8C36876278810FFF538C8AE1FD9F77 /* Pods_ChallongeNetworking_Example.framework */;
+			productReference = D9BD0D5E058C500FA93358FE68EF83A8 /* Pods_ChallongeNetworking_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -349,11 +523,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					1E8C15E2BD45C0A0EA9CF14CA9316BFF = {
-						LastSwiftMigration = 1010;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -363,19 +532,34 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C0F9F86F7B90E8DE5F86D442CF85F23A /* Products */;
+			productRefGroup = 725AAE760EB297BCF6478BC9BC92CC9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E8C15E2BD45C0A0EA9CF14CA9316BFF /* ChallongeNetworking */,
+				011957462979B667EB5E2E13ADDAC5FD /* ChallongeNetworking */,
+				27DC2300AFD29465BDBFF705AFF657F5 /* OHHTTPStubs */,
 				5FF79C355826DCE34B2EDC0AE7A03967 /* Pods-ChallongeNetworking_Example */,
-				5D234DD8D8899F57D14C71D9BC2D497A /* Pods-ChallongeNetworking_Tests */,
+				00F864DA43E4766CF55D4AF3DBD55D68 /* Pods-ChallongeNetworking_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18F3F12A1148AEA1E013E9B081944D7F /* Resources */ = {
+		015D001BC52DB76B42C87437DCBC6678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92CE7B7042FEAD9CDA4A3285996C9EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D00B5BB4FB12F1A376D8466DE440D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,13 +567,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A86A9C6482B4AE0520C3BE6BBBA1BA31 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC3DF3B8BB2110A39C93ADA4B21B20B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,176 +584,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		333D599AC7B469368EE23548C4BC2759 /* Sources */ = {
+		BD225F334C9DA6554C667554EF61986E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8030EB9219D03E700283C97 /* ChallongeNetworking.swift in Sources */,
-				D880666721B7666C00FDFDA0 /* UpdateMatch.swift in Sources */,
-				D8030EB2219D038F00283C97 /* Tournament.swift in Sources */,
-				5AC5F30BD4EF2F19C2EBADF2164F8575 /* ChallongeNetworking-dummy.m in Sources */,
-				D8030EB4219D03AC00283C97 /* Participant.swift in Sources */,
-				D8030EB7219D03C000283C97 /* Match.swift in Sources */,
+				7AD16893CED59D411922B06B9C0E7B3D /* Pods-ChallongeNetworking_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F37EEF756F4A2FC040EC2BDAEC43155E /* Sources */ = {
+		D5D5948766E40B1326C8106CB60390CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27D7E82392BE6AF61D4CE72E18A8D100 /* Pods-ChallongeNetworking_Tests-dummy.m in Sources */,
+				75A1F14EE25BF8F5C433E97CBEDA5274 /* NSURLRequest+HTTPBodyTesting.m in Sources */,
+				BC862D35CFFAA4BEA2F6E6C464F27295 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				407CC320A94B656BFF82445B110D6FF2 /* OHHTTPStubs-dummy.m in Sources */,
+				001F774C7FCE342E1F33245FD51AE64D /* OHHTTPStubs.m in Sources */,
+				65A7146D7A2047FBF3911AFAED3397DE /* OHHTTPStubsMethodSwizzling.m in Sources */,
+				36B2C2402BBBDC443FD365B5A50639F3 /* OHHTTPStubsResponse+JSON.m in Sources */,
+				4CBC26094CDAEC14BBF87AB712D5926B /* OHHTTPStubsResponse.m in Sources */,
+				117395D01D060D69FB0BA68458311D48 /* OHHTTPStubsSwift.swift in Sources */,
+				3F4466E323C5B98E199206BFBCF7CEDA /* OHPathHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6927AEE48DD66BB380F13ECB218FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854145BAC46DFE6263AF6A4B92EEF71B /* ChallongeNetworking-dummy.m in Sources */,
+				AA9DE765341DB3685950C45B2FCEE05F /* ChallongeNetworking.swift in Sources */,
+				35A7EC6222114E63326AFD86B334B441 /* Match.swift in Sources */,
+				25BABC092CECBB3992EB9E09FFB03F3A /* Participant.swift in Sources */,
+				E4FF594A623C26DE794086439F340EC7 /* Tournament.swift in Sources */,
+				C0638C15B91A831A4B790057D02D2678 /* UpdateMatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		202B49E1F904A41EB33F858EF4DA2668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHHTTPStubs;
+			target = 27DC2300AFD29465BDBFF705AFF657F5 /* OHHTTPStubs */;
+			targetProxy = DE4462363275D41BBC8E5F5158442E9C /* PBXContainerItemProxy */;
+		};
 		4BFF7CD78B03C8034A2C10872E12791D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChallongeNetworking;
-			target = 1E8C15E2BD45C0A0EA9CF14CA9316BFF /* ChallongeNetworking */;
+			target = 011957462979B667EB5E2E13ADDAC5FD /* ChallongeNetworking */;
 			targetProxy = 3B0F0629180ECB2C375942D1D33C600C /* PBXContainerItemProxy */;
 		};
-		F21A0558CF86472DA54B095B929FDC63 /* PBXTargetDependency */ = {
+		F1EA680ED3D5A4C10C8C8191AB268E70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-ChallongeNetworking_Example";
-			target = 5FF79C355826DCE34B2EDC0AE7A03967 /* Pods-ChallongeNetworking_Example */;
-			targetProxy = C04B41BC7D9CC850DE0BE2C2D3538FCA /* PBXContainerItemProxy */;
+			name = ChallongeNetworking;
+			target = 011957462979B667EB5E2E13ADDAC5FD /* ChallongeNetworking */;
+			targetProxy = B4325B2C4994BF6F9CDB0E9813AFE88D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2DB78FAD16F850F65B06558D066448CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0A1025A5C0ACB10AD584521F4FF7F85 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ChallongeNetworking_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		5A96FE3F584958EE197C48D6699B0AF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EF0A013AEB3C882953EC638A7E17D0D /* ChallongeNetworking.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChallongeNetworking/ChallongeNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChallongeNetworking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChallongeNetworking/ChallongeNetworking.modulemap";
-				PRODUCT_MODULE_NAME = ChallongeNetworking;
-				PRODUCT_NAME = ChallongeNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		886EF61C7502DABAD0A556014ACB3F88 /* Debug */ = {
+		086F26612FE790F59716B55AEF300FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F5B94D6239D58D17F720D8DC3BC489D /* Pods-ChallongeNetworking_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -588,7 +662,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ChallongeNetworking_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ChallongeNetworking_Example/Pods-ChallongeNetworking_Example.modulemap";
@@ -607,11 +681,85 @@
 			};
 			name = Debug;
 		};
-		AB74AD93211E13D004B0F7EBA27A7817 /* Debug */ = {
+		217E4C5FA3A7E59D4F3A26355632DA6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EF0A013AEB3C882953EC638A7E17D0D /* ChallongeNetworking.xcconfig */;
+			baseConfigurationReference = B3F88068734BCFE576A77F5F9F52AD90 /* Pods-ChallongeNetworking_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChallongeNetworking_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChallongeNetworking_Example/Pods-ChallongeNetworking_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32E2565FBDCF13A98C0450002852973B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E631C0D1D48758EE0FA62B7A944AE9 /* Pods-ChallongeNetworking_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChallongeNetworking_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34AA990D2887585C55D8A322648A3E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA46772EF8B955D786FAB3AB25486C1 /* ChallongeNetworking.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -624,7 +772,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ChallongeNetworking/ChallongeNetworking-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ChallongeNetworking/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ChallongeNetworking/ChallongeNetworking.modulemap";
 				PRODUCT_MODULE_NAME = ChallongeNetworking;
@@ -633,14 +781,14 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -693,7 +841,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -704,11 +852,47 @@
 			};
 			name = Debug;
 		};
-		EE9D52F8387CE2B37B6465483A713E30 /* Release */ = {
+		A90843307CCD50A47B3B58821FD58563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84E631C0D1D48758EE0FA62B7A944AE9 /* Pods-ChallongeNetworking_Tests.release.xcconfig */;
+			baseConfigurationReference = 3FA46772EF8B955D786FAB3AB25486C1 /* ChallongeNetworking.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChallongeNetworking/ChallongeNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChallongeNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChallongeNetworking/ChallongeNetworking.modulemap";
+				PRODUCT_MODULE_NAME = ChallongeNetworking;
+				PRODUCT_NAME = ChallongeNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B27E9957D43C04D60B7E7EA3C23F9152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A1025A5C0ACB10AD584521F4FF7F85 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -720,7 +904,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ChallongeNetworking_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.modulemap";
@@ -731,18 +915,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		F80BEA73E329D354B98F17E2A1A7DC06 /* Release */ = {
+		B6166F16CCDE82A1B82BED5B91166014 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3F88068734BCFE576A77F5F9F52AD90 /* Pods-ChallongeNetworking_Example.release.xcconfig */;
+			baseConfigurationReference = 0768627F23CFFEF5E99D3DC5F0ADBF0D /* OHHTTPStubs.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -752,20 +936,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ChallongeNetworking_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ChallongeNetworking_Example/Pods-ChallongeNetworking_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -773,14 +957,114 @@
 			};
 			name = Release;
 		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F1A8A5EFF2EE00A58A592CB30242E6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0768627F23CFFEF5E99D3DC5F0ADBF0D /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0AE72FD5116637EF7117829560B65904 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A8A5EFF2EE00A58A592CB30242E6D5 /* Debug */,
+				B6166F16CCDE82A1B82BED5B91166014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
-				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -788,26 +1072,26 @@
 		613975969FF088996A85637835943BB5 /* Build configuration list for PBXNativeTarget "Pods-ChallongeNetworking_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				886EF61C7502DABAD0A556014ACB3F88 /* Debug */,
-				F80BEA73E329D354B98F17E2A1A7DC06 /* Release */,
+				086F26612FE790F59716B55AEF300FE9 /* Debug */,
+				217E4C5FA3A7E59D4F3A26355632DA6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E09980DD7CD7C17914E44CEF29434B4 /* Build configuration list for PBXNativeTarget "ChallongeNetworking" */ = {
+		8CDC25BAEAD71C215B75363BC2AD087F /* Build configuration list for PBXNativeTarget "Pods-ChallongeNetworking_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB74AD93211E13D004B0F7EBA27A7817 /* Debug */,
-				5A96FE3F584958EE197C48D6699B0AF3 /* Release */,
+				B27E9957D43C04D60B7E7EA3C23F9152 /* Debug */,
+				32E2565FBDCF13A98C0450002852973B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843D7AEB819926274F9BDE445773AD92 /* Build configuration list for PBXNativeTarget "Pods-ChallongeNetworking_Tests" */ = {
+		B22569BE1711BC8F683DB00B8CC54A32 /* Build configuration list for PBXNativeTarget "ChallongeNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DB78FAD16F850F65B06558D066448CE /* Debug */,
-				EE9D52F8387CE2B37B6465483A713E30 /* Release */,
+				34AA990D2887585C55D8A322648A3E0D /* Debug */,
+				A90843307CCD50A47B3B58821FD58563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,11 +1,15 @@
 use_frameworks!
 
+platform :ios, '11.0'
+def shared_pods
+    pod 'ChallongeNetworking', :path => '../'
+end
+
 target 'ChallongeNetworking_Example' do
-  pod 'ChallongeNetworking', :path => '../'
+    shared_pods
+end
 
-  target 'ChallongeNetworking_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'ChallongeNetworking_Tests' do
+    shared_pods
+    pod 'OHHTTPStubs/Swift'
 end

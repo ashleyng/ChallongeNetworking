@@ -15,22 +15,26 @@ public struct Participant: Codable {
     
     enum CodingKeys: String, CodingKey {
         case name, icon
-        case mainId = "id"
         case tournamentId = "tournament_id"
-        case groupPlayerIdsArray = "group_player_ids"
     }
     
-    public struct Id {
+    public struct Id: Codable {
+        enum CodingKeys: String, CodingKey {
+            case main = "id"
+            case group = "group_player_ids"
+        }
         public let main: Int
         public let group: [Int]
-        public let all: [Int]
+        public var all: [Int] {
+            var groupCopy = group
+            groupCopy.append(main)
+            return groupCopy
+        }
     }
     
-    private let mainId: Int
     public let name: String
     public let tournamentId: Int
     public let icon: String?
-    private let groupPlayerIdsArray: [Int]
     /// a participant can have multiple Ids when the tournament
     /// is a multi-stage tournament (group stage and then bracket).
     /// `main` is their top level Id,
@@ -42,15 +46,21 @@ public struct Participant: Codable {
     /// participant's multiple Ids.
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        mainId = try values.decode(Int.self, forKey: .mainId)
         name = try values.decode(String.self, forKey: .name)
         tournamentId = try values.decode(Int.self, forKey: .tournamentId)
         icon = try values.decodeIfPresent(String.self, forKey: .icon)
-
-        groupPlayerIdsArray = try values.decode([Int].self, forKey: .groupPlayerIdsArray)
-        var groupIdCopy = groupPlayerIdsArray
-        groupIdCopy.append(mainId)
-        id = Id(main: mainId, group: groupPlayerIdsArray, all: groupIdCopy)
+        
+        let idValues = try decoder.container(keyedBy: Id.CodingKeys.self)
+        let groupIds = try idValues.decode([Int].self, forKey: .group)
+        let main = try idValues.decode(Int.self, forKey: .main)
+        id = Id(main: main, group: groupIds)
+    }
+    
+    public init(name: String, tournamentId: Int, icon: String?, id: Id) {
+        self.name = name
+        self.tournamentId = tournamentId
+        self.icon = icon
+        self.id = id
     }
 }
 
