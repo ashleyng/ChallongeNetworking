@@ -62,7 +62,7 @@ class ParticipantTests: XCTestCase {
     }
     
     private func setupNonGroupParticipants() -> [Participant] {
-        let p1 = Participant(name: "Annabell Zhang1234", tournamentId: 12345, icon: nil, id: Participant.Id(main: 76, group: [92]))
+        let p1 = Participant(name: "Annabell Zhang", tournamentId: 12345, icon: nil, id: Participant.Id(main: 76, group: [92]))
         let p2 = Participant(name: "Ronan Shepard", tournamentId: 12345, icon: nil, id: Participant.Id(main: 77, group: [93]))
         let p3 = Participant(name: "Norah Hewitt", tournamentId: 12345, icon: nil, id: Participant.Id(main: 78, group: [94]))
         let p4 = Participant(name: "Thea Summer", tournamentId: 12345, icon: nil, id: Participant.Id(main: 79, group: [96]))
