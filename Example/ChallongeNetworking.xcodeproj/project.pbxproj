@@ -29,6 +29,8 @@
 		D8080D9C2214FC41007B418E /* MultiParticipants-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */; };
 		D82D0FBF221E457400AB42D3 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FBE221E457400AB42D3 /* KeychainStore.swift */; };
 		D82D0FD1221E4C5E00AB42D3 /* FetchSingleTournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FCF221E4BC400AB42D3 /* FetchSingleTournamentTests.swift */; };
+		D82D0FD5221E4D9800AB42D3 /* SingleMatchForTournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FD4221E4D9800AB42D3 /* SingleMatchForTournamentTests.swift */; };
+		D82D0FD6221E4EEA00AB42D3 /* SingleMatch-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D82D0FD2221E4D7A00AB42D3 /* SingleMatch-Feb-2019.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MultiParticipants-Feb-2019.json"; sourceTree = "<group>"; };
 		D82D0FBE221E457400AB42D3 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		D82D0FCF221E4BC400AB42D3 /* FetchSingleTournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSingleTournamentTests.swift; sourceTree = "<group>"; };
+		D82D0FD2221E4D7A00AB42D3 /* SingleMatch-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SingleMatch-Feb-2019.json"; sourceTree = "<group>"; };
+		D82D0FD4221E4D9800AB42D3 /* SingleMatchForTournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMatchForTournamentTests.swift; sourceTree = "<group>"; };
 		E3DF095D57F3E9743BDE0165 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F03D58D9F06B83CB90BF68F0 /* Pods-ChallongeNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,6 +222,7 @@
 				D8080D882213C372007B418E /* GetSingleTournament-Feb-2019.json */,
 				D8080D8C2213CA65007B418E /* GetAllTournaments-Feb-2019.json */,
 				D8080D8E2213CF94007B418E /* Matches-Feb-2019.json */,
+				D82D0FD2221E4D7A00AB42D3 /* SingleMatch-Feb-2019.json */,
 				D8080D972214F55B007B418E /* Participants-Feb-2019.json */,
 				D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */,
 			);
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				D8080D902214E429007B418E /* FetchMatchesForTournamentTests.swift */,
+				D82D0FD4221E4D9800AB42D3 /* SingleMatchForTournamentTests.swift */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 				D8080D9C2214FC41007B418E /* MultiParticipants-Feb-2019.json in Resources */,
 				D8080D922214EFBE007B418E /* Matches-Feb-2019.json in Resources */,
 				D8080D9B2214FC3E007B418E /* Participants-Feb-2019.json in Resources */,
+				D82D0FD6221E4EEA00AB42D3 /* SingleMatch-Feb-2019.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +479,7 @@
 				D82D0FD1221E4C5E00AB42D3 /* FetchSingleTournamentTests.swift in Sources */,
 				D8080D912214E429007B418E /* FetchMatchesForTournamentTests.swift in Sources */,
 				D8080D852213C32D007B418E /* Helper.swift in Sources */,
+				D82D0FD5221E4D9800AB42D3 /* SingleMatchForTournamentTests.swift in Sources */,
 				D8080D962214F477007B418E /* FetchParticipantsForTournamentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
