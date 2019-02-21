@@ -34,6 +34,9 @@
 		BC862D35CFFAA4BEA2F6E6C464F27295 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B321972C749BBF31E3A16C3D1F09075A /* OHHTTPStubs+NSURLSessionConfiguration.m */; };
 		BFC5E36CF24B525D114459BB05430145 /* OHHTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CFDA63893AE5C4E3EE603A05EF60172 /* OHHTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C0638C15B91A831A4B790057D02D2678 /* UpdateMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35561DF21EB791227B7AF54A9EAEC5 /* UpdateMatch.swift */; };
+		D82D0FC7221E49DF00AB42D3 /* TournamentRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FC6221E49DF00AB42D3 /* TournamentRequests.swift */; };
+		D82D0FC9221E49E500AB42D3 /* ParticipantRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FC8221E49E500AB42D3 /* ParticipantRequests.swift */; };
+		D82D0FCB221E49EB00AB42D3 /* MatchRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FCA221E49EB00AB42D3 /* MatchRequests.swift */; };
 		DE7422B33CB514ABF6E341418B48384A /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 09037DCB9A9E7F6D9ABDF854E18B3F95 /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FF594A623C26DE794086439F340EC7 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD6B68A071CF12A4DC60BEE3842678 /* Tournament.swift */; };
 		EA516321CC31E8F0D46CB75EBBEBFBAE /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EE4C0594FE3A8052E7859D33444F20 /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,7 +76,7 @@
 		04D90E5E1833EAE9096898D7EB625AAA /* Pods-ChallongeNetworking_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Tests-resources.sh"; sourceTree = "<group>"; };
 		0768627F23CFFEF5E99D3DC5F0ADBF0D /* OHHTTPStubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.xcconfig; sourceTree = "<group>"; };
 		09037DCB9A9E7F6D9ABDF854E18B3F95 /* OHHTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+JSON.h"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
-		09B11B444D4E139AB1372502226A552C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		09B11B444D4E139AB1372502226A552C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1185AB7C723035A381928393451103ED /* ChallongeNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChallongeNetworking-umbrella.h"; sourceTree = "<group>"; };
 		1253121AF65EBBBBB6B92B2FD862298D /* OHHTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+JSON.m"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
 		17343864BC0907F6437EFC72703A8F21 /* OHPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHPathHelpers.h; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h; sourceTree = "<group>"; };
@@ -82,7 +85,7 @@
 		1C73FA2256736D5E2C54DCE3B7E292AC /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
 		20EE4C0594FE3A8052E7859D33444F20 /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = OHHTTPStubs/Sources/Compatibility.h; sourceTree = "<group>"; };
 		23681D7CA22880062FB35CC8E9946D37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23CE7929202E62289AE63F4F240E69D3 /* ChallongeNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChallongeNetworking.framework; path = ChallongeNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CE7929202E62289AE63F4F240E69D3 /* ChallongeNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChallongeNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D618A094CFC2509A20994096DC24F6 /* Pods-ChallongeNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChallongeNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		24B96B96CD36E9454C88C9BED36D9A68 /* ChallongeNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChallongeNetworking-dummy.m"; sourceTree = "<group>"; };
 		260888AA57A0768E7B105BABDD7F5DEE /* Participant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
@@ -95,12 +98,12 @@
 		4F27B864FB6EEE764435CD1579608F80 /* Pods-ChallongeNetworking_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Example-resources.sh"; sourceTree = "<group>"; };
 		546BA846CC4E3C44FCD780694CBEBD84 /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
 		59D4BC3BA82300DADF3E63134B3D9C15 /* ChallongeNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallongeNetworking.swift; path = Source/ChallongeNetworking.swift; sourceTree = "<group>"; };
-		5C5218E4FAF4396F0F70BCB880E1A6F5 /* ChallongeNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ChallongeNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C5218E4FAF4396F0F70BCB880E1A6F5 /* ChallongeNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ChallongeNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5D81A5F1AAD5C83B60409D759C5C9C61 /* Pods-ChallongeNetworking_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChallongeNetworking_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5E01312904FAF587B446FBF0F986B88C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7133518842AE17EEA6B5D0562905E5B5 /* Pods-ChallongeNetworking_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChallongeNetworking_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		74A859FCEA3BF80FD22638D0E6429939 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CAC986EA1D039404D9841E384B56D21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		74A859FCEA3BF80FD22638D0E6429939 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CAC986EA1D039404D9841E384B56D21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7CFDA63893AE5C4E3EE603A05EF60172 /* OHHTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsMethodSwizzling.h; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
 		7F5B94D6239D58D17F720D8DC3BC489D /* Pods-ChallongeNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChallongeNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		84274EDDE4B2CC3D3F06137F4A21386C /* Pods-ChallongeNetworking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChallongeNetworking_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -110,8 +113,8 @@
 		89DC365FEF314CAE9760892B813E187E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8B06D536605F35A1792F7714F325ED18 /* Pods-ChallongeNetworking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChallongeNetworking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B87DA15BCC73A4D7D7138CD2C57F55C /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
-		922D237E9C18F0BC3E7DAB5D8483FA99 /* Pods_ChallongeNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChallongeNetworking_Tests.framework; path = "Pods-ChallongeNetworking_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		922D237E9C18F0BC3E7DAB5D8483FA99 /* Pods_ChallongeNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallongeNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1D98969FB41FB4495D5FA1883CCFA90 /* OHHTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsMethodSwizzling.m; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
 		A66F40FE0633924078F749F24B38AE07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0A1025A5C0ACB10AD584521F4FF7F85 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChallongeNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +126,10 @@
 		CD9C42222D6C3D401B4EFCD3E73F6480 /* Pods-ChallongeNetworking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChallongeNetworking_Example.modulemap"; sourceTree = "<group>"; };
 		D47232960CF657D24AE7267527A946BA /* ChallongeNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChallongeNetworking.modulemap; sourceTree = "<group>"; };
 		D7F6EEEF3526A00FD366830132C49AC0 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
-		D9BD0D5E058C500FA93358FE68EF83A8 /* Pods_ChallongeNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChallongeNetworking_Example.framework; path = "Pods-ChallongeNetworking_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82D0FC6221E49DF00AB42D3 /* TournamentRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TournamentRequests.swift; path = Source/TournamentRequests.swift; sourceTree = "<group>"; };
+		D82D0FC8221E49E500AB42D3 /* ParticipantRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParticipantRequests.swift; path = Source/ParticipantRequests.swift; sourceTree = "<group>"; };
+		D82D0FCA221E49EB00AB42D3 /* MatchRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchRequests.swift; path = Source/MatchRequests.swift; sourceTree = "<group>"; };
+		D9BD0D5E058C500FA93358FE68EF83A8 /* Pods_ChallongeNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallongeNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA849E207F8FBF361C39DA1D75983EFA /* ChallongeNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChallongeNetworking-prefix.pch"; sourceTree = "<group>"; };
 		E652982D0B5C45A99886EA6EC3A8E284 /* Pods-ChallongeNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChallongeNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FB35561DF21EB791227B7AF54A9EAEC5 /* UpdateMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UpdateMatch.swift; sourceTree = "<group>"; };
@@ -262,6 +268,9 @@
 			isa = PBXGroup;
 			children = (
 				59D4BC3BA82300DADF3E63134B3D9C15 /* ChallongeNetworking.swift */,
+				D82D0FC6221E49DF00AB42D3 /* TournamentRequests.swift */,
+				D82D0FC8221E49E500AB42D3 /* ParticipantRequests.swift */,
+				D82D0FCA221E49EB00AB42D3 /* MatchRequests.swift */,
 				0DCDA257814248266B5E2CF8FC0DC609 /* Model */,
 				313663979D17F8B24195DA59C60955A8 /* Pod */,
 				027AC355BC7749B83906323DC9D763FF /* Support Files */,
@@ -347,7 +356,6 @@
 				A9D34BD6CB8C90812507BD7F37F7FF23 /* Support Files */,
 				4EC73053DFFE0DE14B6CCCBA9FAA1B53 /* Swift */,
 			);
-			name = OHHTTPStubs;
 			path = OHHTTPStubs;
 			sourceTree = "<group>";
 		};
@@ -612,12 +620,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82D0FC7221E49DF00AB42D3 /* TournamentRequests.swift in Sources */,
 				854145BAC46DFE6263AF6A4B92EEF71B /* ChallongeNetworking-dummy.m in Sources */,
 				AA9DE765341DB3685950C45B2FCEE05F /* ChallongeNetworking.swift in Sources */,
+				D82D0FCB221E49EB00AB42D3 /* MatchRequests.swift in Sources */,
 				35A7EC6222114E63326AFD86B334B441 /* Match.swift in Sources */,
 				25BABC092CECBB3992EB9E09FFB03F3A /* Participant.swift in Sources */,
 				E4FF594A623C26DE794086439F340EC7 /* Tournament.swift in Sources */,
 				C0638C15B91A831A4B790057D02D2678 /* UpdateMatch.swift in Sources */,
+				D82D0FC9221E49E500AB42D3 /* ParticipantRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,8 +720,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -746,8 +756,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -877,8 +886,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -947,8 +955,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
