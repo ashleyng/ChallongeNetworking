@@ -1,5 +1,5 @@
 //
-//  ParticipantTests.swift
+//  FetchParticipantsForTournamentTests.swift
 //  ChallongeNetworking_Tests
 //
 //  Created by Ashley Ng on 2/13/19.
@@ -10,7 +10,7 @@ import XCTest
 import OHHTTPStubs
 @testable import ChallongeNetworking
 
-class ParticipantTests: XCTestCase {
+class FetchParticipantsForTournamentTests: XCTestCase {
 
     var networking: ChallongeNetworking!
     let tournamentId = 1

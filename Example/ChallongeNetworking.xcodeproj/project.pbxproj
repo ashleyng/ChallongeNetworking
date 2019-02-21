@@ -10,7 +10,7 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* TournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* TournamentTests.swift */; };
+		607FACEC1AFB9204008FA782 /* FetchAllTournamentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* FetchAllTournamentsTests.swift */; };
 		83EB33B3A207E77D5116C820 /* Pods_ChallongeNetworking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423F8A80FDB894D46B8F0155 /* Pods_ChallongeNetworking_Example.framework */; };
 		A8165B159FDB67DB6A74E3AF /* Pods_ChallongeNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC1CDEA585F62D1817E597B /* Pods_ChallongeNetworking_Tests.framework */; };
 		D8030EBC219D041D00283C97 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EBA219D041D00283C97 /* CredentialsViewController.swift */; };
@@ -20,14 +20,15 @@
 		D8030EC9219D0A0D00283C97 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8030EC7219D0A0D00283C97 /* JSONViewController.swift */; };
 		D8030ECA219D0A0D00283C97 /* JSONViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8030EC8219D0A0D00283C97 /* JSONViewController.xib */; };
 		D8080D852213C32D007B418E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8080D832213C2B0007B418E /* Helper.swift */; };
-		D8080D912214E429007B418E /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8080D902214E429007B418E /* MatchTests.swift */; };
+		D8080D912214E429007B418E /* FetchMatchesForTournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8080D902214E429007B418E /* FetchMatchesForTournamentTests.swift */; };
 		D8080D922214EFBE007B418E /* Matches-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D8E2213CF94007B418E /* Matches-Feb-2019.json */; };
 		D8080D932214F2E8007B418E /* GetAllTournaments-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D8C2213CA65007B418E /* GetAllTournaments-Feb-2019.json */; };
 		D8080D942214F2EC007B418E /* GetSingleTournament-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D882213C372007B418E /* GetSingleTournament-Feb-2019.json */; };
-		D8080D962214F477007B418E /* ParticipantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8080D952214F477007B418E /* ParticipantTests.swift */; };
+		D8080D962214F477007B418E /* FetchParticipantsForTournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8080D952214F477007B418E /* FetchParticipantsForTournamentTests.swift */; };
 		D8080D9B2214FC3E007B418E /* Participants-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D972214F55B007B418E /* Participants-Feb-2019.json */; };
 		D8080D9C2214FC41007B418E /* MultiParticipants-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */; };
 		D82D0FBF221E457400AB42D3 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FBE221E457400AB42D3 /* KeychainStore.swift */; };
+		D82D0FD1221E4C5E00AB42D3 /* FetchSingleTournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FCF221E4BC400AB42D3 /* FetchSingleTournamentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ChallongeNetworking_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallongeNetworking_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* TournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* FetchAllTournamentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllTournamentsTests.swift; sourceTree = "<group>"; };
 		6C12C42D9B611D325C146C75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6F469965C6660F28A7EE10CD /* Pods-ChallongeNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Example/Pods-ChallongeNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A34F095B49F56526D9AE90EF /* Pods-ChallongeNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Example/Pods-ChallongeNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,11 +67,12 @@
 		D8080D882213C372007B418E /* GetSingleTournament-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GetSingleTournament-Feb-2019.json"; sourceTree = "<group>"; };
 		D8080D8C2213CA65007B418E /* GetAllTournaments-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GetAllTournaments-Feb-2019.json"; sourceTree = "<group>"; };
 		D8080D8E2213CF94007B418E /* Matches-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Matches-Feb-2019.json"; sourceTree = "<group>"; };
-		D8080D902214E429007B418E /* MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTests.swift; sourceTree = "<group>"; };
-		D8080D952214F477007B418E /* ParticipantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantTests.swift; sourceTree = "<group>"; };
+		D8080D902214E429007B418E /* FetchMatchesForTournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMatchesForTournamentTests.swift; sourceTree = "<group>"; };
+		D8080D952214F477007B418E /* FetchParticipantsForTournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchParticipantsForTournamentTests.swift; sourceTree = "<group>"; };
 		D8080D972214F55B007B418E /* Participants-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Participants-Feb-2019.json"; sourceTree = "<group>"; };
 		D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MultiParticipants-Feb-2019.json"; sourceTree = "<group>"; };
 		D82D0FBE221E457400AB42D3 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		D82D0FCF221E4BC400AB42D3 /* FetchSingleTournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSingleTournamentTests.swift; sourceTree = "<group>"; };
 		E3DF095D57F3E9743BDE0165 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F03D58D9F06B83CB90BF68F0 /* Pods-ChallongeNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,10 +144,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D8080D872213C343007B418E /* TestJsonFiles */,
-				D8080D902214E429007B418E /* MatchTests.swift */,
-				D8080D952214F477007B418E /* ParticipantTests.swift */,
-				607FACEB1AFB9204008FA782 /* TournamentTests.swift */,
+				D82D0FCE221E4B3800AB42D3 /* Tournaments */,
+				D82D0FCD221E4B3100AB42D3 /* Participants */,
+				D82D0FCC221E4B2A00AB42D3 /* Matches */,
+				D8080D872213C343007B418E /* JsonFiles */,
 				D8080D832213C2B0007B418E /* Helper.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -210,7 +212,7 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		D8080D872213C343007B418E /* TestJsonFiles */ = {
+		D8080D872213C343007B418E /* JsonFiles */ = {
 			isa = PBXGroup;
 			children = (
 				D8080D882213C372007B418E /* GetSingleTournament-Feb-2019.json */,
@@ -219,7 +221,32 @@
 				D8080D972214F55B007B418E /* Participants-Feb-2019.json */,
 				D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */,
 			);
-			path = TestJsonFiles;
+			path = JsonFiles;
+			sourceTree = "<group>";
+		};
+		D82D0FCC221E4B2A00AB42D3 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				D8080D902214E429007B418E /* FetchMatchesForTournamentTests.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		D82D0FCD221E4B3100AB42D3 /* Participants */ = {
+			isa = PBXGroup;
+			children = (
+				D8080D952214F477007B418E /* FetchParticipantsForTournamentTests.swift */,
+			);
+			path = Participants;
+			sourceTree = "<group>";
+		};
+		D82D0FCE221E4B3800AB42D3 /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* FetchAllTournamentsTests.swift */,
+				D82D0FCF221E4BC400AB42D3 /* FetchSingleTournamentTests.swift */,
+			);
+			path = Tournaments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,10 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* TournamentTests.swift in Sources */,
-				D8080D912214E429007B418E /* MatchTests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* FetchAllTournamentsTests.swift in Sources */,
+				D82D0FD1221E4C5E00AB42D3 /* FetchSingleTournamentTests.swift in Sources */,
+				D8080D912214E429007B418E /* FetchMatchesForTournamentTests.swift in Sources */,
 				D8080D852213C32D007B418E /* Helper.swift in Sources */,
-				D8080D962214F477007B418E /* ParticipantTests.swift in Sources */,
+				D8080D962214F477007B418E /* FetchParticipantsForTournamentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

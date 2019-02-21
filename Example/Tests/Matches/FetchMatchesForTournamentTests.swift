@@ -1,5 +1,5 @@
 //
-//  MatchTests.swift
+//  FetchMatchesForTournamentTests.swift
 //  ChallongeNetworking_Tests
 //
 //  Created by Ashley Ng on 2/13/19.
@@ -10,7 +10,7 @@ import XCTest
 import OHHTTPStubs
 @testable import ChallongeNetworking
 
-class MatchTests: XCTestCase {
+class FetchMatchesForTournamentTests: XCTestCase {
     var networking: ChallongeNetworking!
     let tournamentId = 1
     
@@ -22,7 +22,7 @@ class MatchTests: XCTestCase {
         }
     }
     
-    func testMatchCount() {
+    func testMatchesCount() {
         var actualMatches: [Match]!
         let expectation = self.expectation(description: "Fetch Matches")
         networking.getMatchesForTournament(tournamentId, completion: { matches in
@@ -35,7 +35,7 @@ class MatchTests: XCTestCase {
         XCTAssertEqual(actualMatches.count, expectedMatches.count)
     }
     
-    func testCompletedMatchVariables() {
+    func testCompletedMatchesVariables() {
         var actualMatch: Match!
         let expectation = self.expectation(description: "Fetch Matches")
         networking.getMatchesForTournament(tournamentId, completion: { matches in
@@ -53,7 +53,7 @@ class MatchTests: XCTestCase {
         XCTAssertEqual(actualMatch.scoresCsv, expectedMatch.scoresCsv)
     }
     
-    func testIncompletedMatchVariables() {
+    func testIncompletedMatchesVariables() {
         var actualMatch: Match!
         let expectation = self.expectation(description: "Fetch Matches")
         networking.getMatchesForTournament(tournamentId, completion: { matches in

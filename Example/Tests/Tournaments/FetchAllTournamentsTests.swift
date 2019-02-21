@@ -1,8 +1,16 @@
+//
+//  FetchAllTournamentsTests.swift
+//  ChallongeNetworking_Tests
+//
+//  Created by Ashley Ng on 2/13/19.
+//  Copyright © 2019 CocoaPods. All rights reserved.
+//
+
 import XCTest
 import OHHTTPStubs
 @testable import ChallongeNetworking
 
-class TournamentTests: XCTestCase {
+class FetchAllTournamentsTests: XCTestCase {
     
     var networking: ChallongeNetworking!
     
@@ -14,7 +22,7 @@ class TournamentTests: XCTestCase {
         }
     }
     
-    func testTournamentCount() {
+    func testAllTournamentsCount() {
         var actualTournaments: [Tournament]!
         let expectation = self.expectation(description: "Fetch Tournaments")
         networking.getAllTournaments(completion: { tournament in
@@ -27,7 +35,7 @@ class TournamentTests: XCTestCase {
         XCTAssertEqual(actualTournaments.count, expectedTournaments.count)
     }
     
-    func testTournamentVariables() {
+    func testAllTournamentsVariables() {
         var actualTournaments: [Tournament]!
         let expectation = self.expectation(description: "Fetch Tournaments")
         networking.getAllTournaments(completion: { tournaments in
