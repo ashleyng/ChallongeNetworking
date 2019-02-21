@@ -5,7 +5,6 @@ import OHHTTPStubs
 class TournamentTests: XCTestCase {
     
     var networking: ChallongeNetworking!
-    let tournamentId = 1
     
     override func setUp() {
         networking = ChallongeNetworking(username: "MockUsername", apiKey: "MockAPIKey")

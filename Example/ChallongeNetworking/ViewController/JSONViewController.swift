@@ -26,9 +26,4 @@ class JSONViewController: UIViewController {
         super.viewDidLoad()
         jsonTextView.text = encodedEntityString
     }
-    
-    @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
 }

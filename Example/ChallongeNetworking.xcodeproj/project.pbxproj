@@ -27,6 +27,7 @@
 		D8080D962214F477007B418E /* ParticipantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8080D952214F477007B418E /* ParticipantTests.swift */; };
 		D8080D9B2214FC3E007B418E /* Participants-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D972214F55B007B418E /* Participants-Feb-2019.json */; };
 		D8080D9C2214FC41007B418E /* MultiParticipants-Feb-2019.json in Resources */ = {isa = PBXBuildFile; fileRef = D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */; };
+		D82D0FBF221E457400AB42D3 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D0FBE221E457400AB42D3 /* KeychainStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D8080D952214F477007B418E /* ParticipantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantTests.swift; sourceTree = "<group>"; };
 		D8080D972214F55B007B418E /* Participants-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Participants-Feb-2019.json"; sourceTree = "<group>"; };
 		D8080D992214FA94007B418E /* MultiParticipants-Feb-2019.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MultiParticipants-Feb-2019.json"; sourceTree = "<group>"; };
+		D82D0FBE221E457400AB42D3 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		E3DF095D57F3E9743BDE0165 /* Pods-ChallongeNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F03D58D9F06B83CB90BF68F0 /* Pods-ChallongeNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallongeNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallongeNetworking_Tests/Pods-ChallongeNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 				D8030EC6219D074500283C97 /* ViewController */,
 				D8030EC4219D072900283C97 /* Views */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				D82D0FBE221E457400AB42D3 /* KeychainStore.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -430,6 +433,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				D8030EC0219D050500283C97 /* EndpointsTableViewController.swift in Sources */,
 				D8030EBC219D041D00283C97 /* CredentialsViewController.swift in Sources */,
+				D82D0FBF221E457400AB42D3 /* KeychainStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
