@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ChallongeNetworking.svg?style=flat)](https://cocoapods.org/pods/ChallongeNetworking)
 [![License](https://img.shields.io/cocoapods/l/ChallongeNetworking.svg?style=flat)](https://cocoapods.org/pods/ChallongeNetworking)
 [![Platform](https://img.shields.io/cocoapods/p/ChallongeNetworking.svg?style=flat)](https://cocoapods.org/pods/ChallongeNetworking)
+[![Code Coverage Status](https://codecov.io/gh/ashleyng/ChallongeNetworking/branch/master/graphs/badge.svg)](https://codecov.io/gh/ashleyng/ChallongeNetworking/branch/master)
 
 ## Running Example App
 1. Create an account on challonge: https://challonge.com/
