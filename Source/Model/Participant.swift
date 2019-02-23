@@ -30,6 +30,11 @@ public struct Participant: Codable {
             groupCopy.append(main)
             return groupCopy
         }
+        
+        public init(main: Int, group: [Int]) {
+            self.main = main
+            self.group = group
+        }
     }
     
     public let name: String

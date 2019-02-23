@@ -62,4 +62,28 @@ public struct Tournament: Codable {
     public let updatedAt: String
     public let url: URL
     public let liveImageUrl: URL
+    
+    public init(dateCreated: String,
+                description: String,
+                gameId: Int?,
+                id: Int,
+                name: String,
+                participantsCount: Int,
+                state: State,
+                tournamentType: TournamentType,
+                updatedAt: String,
+                url: URL,
+                liveImageUrl: URL) {
+        self.dateCreated = dateCreated
+        self.description = description
+        self.gameId = gameId
+        self.id = id
+        self.name = name
+        self.participantsCount = participantsCount
+        self.state = state
+        self.tournamentType = tournamentType
+        self.updatedAt = updatedAt
+        self.url = url
+        self.liveImageUrl = liveImageUrl
+    }
 }
