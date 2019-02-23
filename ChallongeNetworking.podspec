@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChallongeNetworking'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'Swift library to integrate with the Challonge API.'
 
 
