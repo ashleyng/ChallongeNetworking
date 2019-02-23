@@ -28,7 +28,8 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
         .putMatchScore
     ]
     
-    let networking: ChallongeNetworking
+    private let networking: ChallongeNetworking
+    private let encoder = JSONEncoder()
 
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var loadingIndicator: UIActivityIndicatorView!
@@ -47,6 +48,11 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
         tableView.delegate = self
         tableView.dataSource = self
         self.loadingIndicator.isHidden = true
+        
+        navigationController?.title = "Endpoints"
+        navigationItem.hidesBackButton = true
+        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(_:)))
+        navigationItem.setRightBarButton(logoutBarButtonItem, animated: false)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,7 +68,7 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let endpoint = endpoints[indexPath.row]
-        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
         defer {
             self.loadingIndicator.stopAnimating()
             self.loadingIndicator.isHidden = true
@@ -74,78 +80,34 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
         switch endpoint {
         case .getAllTournaments:
             networking.getAllTournaments(completion: { tournaments in
-                guard let encodedData = try? encoder.encode(tournaments),
-                    let stringValue = String(data: encodedData, encoding: .utf8) else {
-                        return
-                }
-                DispatchQueue.main.async {
-                    let vc = JSONViewController(encodedEntityString: stringValue)
-                    self.present(vc, animated: true, completion: nil)
-                }
+                self.showJsonVc(withEntity: tournaments, forEndpoint: endpoint)
             }, onError: { [weak self] error in
-                guard let `self` = self else { return }
-                DispatchQueue.main.async {
-                    let alertVC = self.createAlert(title: "ERROR", message: "\(error.localizedDescription)")
-                    self.present(alertVC, animated: true, completion: nil)
-                }
+                self?.showErrorAlert(error)
             })
         case .getTournament:
             let alert = createAlertControllerWithTextField(title: nil, message: "Fetch tournament with ID") { id, _ in
                 self.networking.getTournament(id, completion: { tournament in
-                    guard let encodedData = try? encoder.encode(tournament),
-                        let stringValue = String(data: encodedData, encoding: .utf8) else {
-                            return
-                    }
-                    DispatchQueue.main.async {
-                        let vc = JSONViewController(encodedEntityString: stringValue)
-                        self.present(vc, animated: true, completion: nil)
-                    }
+                    self.showJsonVc(withEntity: tournament, forEndpoint: endpoint)
                 }, onError: { [weak self] error in
-                    guard let `self` = self else { return }
-                    DispatchQueue.main.async {
-                        let alertVC = self.createAlert(title: "ERROR", message: "\(error.localizedDescription)")
-                        self.present(alertVC, animated: true, completion: nil)
-                    }
+                    self?.showErrorAlert(error)
                 })
             }
             self.present(alert, animated: true, completion: nil)
         case .getParticipants:
             let alert = createAlertControllerWithTextField(title: nil, message: "Fetch participants for tournament") { id, _ in
                 self.networking.getParticipantsForTournament(Int(id)!, completion: { participants in
-                    guard let encodedData = try? encoder.encode(participants),
-                        let stringValue = String(data: encodedData, encoding: .utf8) else {
-                            return
-                    }
-                    DispatchQueue.main.async {
-                        let vc = JSONViewController(encodedEntityString: stringValue)
-                        self.present(vc, animated: true, completion: nil)
-                    }
+                    self.showJsonVc(withEntity: participants, forEndpoint: endpoint)
                 }, onError: { [weak self] error in
-                    guard let `self` = self else { return }
-                    DispatchQueue.main.async {
-                        let alertVC = self.createAlert(title: "ERROR", message: "\(error.localizedDescription)")
-                        self.present(alertVC, animated: true, completion: nil)
-                    }
+                    self?.showErrorAlert(error)
                 })
             }
             self.present(alert, animated: true, completion: nil)
         case .getMatches:
             let alert = createAlertControllerWithTextField(title: nil, message: "Fetch matches for tournament") { id, _ in
                 self.networking.getMatchesForTournament(Int(id)!, completion: { matches in
-                    guard let encodedData = try? encoder.encode(matches),
-                        let stringValue = String(data: encodedData, encoding: .utf8) else {
-                            return
-                    }
-                    DispatchQueue.main.async {
-                        let vc = JSONViewController(encodedEntityString: stringValue)
-                        self.present(vc, animated: true, completion: nil)
-                    }
+                    self.showJsonVc(withEntity: matches, forEndpoint: endpoint)
                 }, onError: { [weak self] error in
-                    guard let `self` = self else { return }
-                    DispatchQueue.main.async {
-                        let alertVC = self.createAlert(title: "ERROR", message: "\(error.localizedDescription)")
-                        self.present(alertVC, animated: true, completion: nil)
-                    }
+                    self?.showErrorAlert(error)
                 })
             }
             self.present(alert, animated: true, completion: nil)
@@ -155,25 +117,46 @@ class EndpointsTableViewController: UIViewController, UITableViewDelegate, UITab
                     return
                 }
                 self.networking.getSingleMatchForTournament(id, matchId: secondId, completion: { match in
-                    guard let encodedData = try? encoder.encode(match),
-                        let stringValue = String(data: encodedData, encoding: .utf8) else {
-                            return
-                    }
-                    DispatchQueue.main.async {
-                        let vc = JSONViewController(encodedEntityString: stringValue)
-                        self.present(vc, animated: true, completion: nil)
-                    }
+                    self.showJsonVc(withEntity: match, forEndpoint: endpoint)
                 }, onError: { [weak self] error in
-                    guard let `self` = self else { return }
-                    DispatchQueue.main.async {
-                        let alertVC = self.createAlert(title: "ERROR", message: "\(error.localizedDescription)")
-                        self.present(alertVC, animated: true, completion: nil)
-                    }
+                    self?.showErrorAlert(error)
                 })
             }
             self.present(alert, animated: true, completion: nil)
         case .putMatchScore:
             break
+        }
+    }
+    
+    @objc
+    private func logout(_ sender: Any) {
+        guard let username = UserDefaults.standard.string(forKey: CHALLONGE_USERNAME_KEY) else {
+            return
+        }
+        try? KeychainStore.deleteApiKey(withUsername: username)
+        UserDefaults.standard.removeObject(forKey: CHALLONGE_USERNAME_KEY)
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    private func showJsonVc<T: Codable>(withEntity entity: T, forEndpoint endpoint: Endpoint) {
+        guard let encodedData = try? encoder.encode(entity),
+            let stringValue = String(data: encodedData, encoding: .utf8) else {
+                return
+        }
+        DispatchQueue.main.async {
+            let vc = JSONViewController(encodedEntityString: stringValue)
+            vc.title = endpoint.rawValue
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+}
+
+// :MARK AlertViewControllers
+extension EndpointsTableViewController {
+    private func showErrorAlert(_ error: Error) {
+        DispatchQueue.main.async {
+            let alertVC = self.createAlert(title: "ERROR", message: "\(error.localizedDescription)")
+            self.present(alertVC, animated: true, completion: nil)
         }
     }
     

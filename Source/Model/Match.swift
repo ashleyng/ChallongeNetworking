@@ -59,4 +59,26 @@ public struct Match: Codable {
         
         return [player1Id: player1Votes, player2Id: player2Votes]
     }
+    
+    public init(id: Int,
+                player1Id: Int?,
+                player2Id: Int?,
+                state: State,
+                tournamentId: Int,
+                winnerId: Int?,
+                scoresCsv: String?,
+                suggestedPlayOrder: Int?,
+                player1Votes: Int?,
+                player2Votes: Int?) {
+        self.id = id
+        self.player1Id = player1Id
+        self.player2Id = player2Id
+        self.state = state
+        self.tournamentId = tournamentId
+        self.winnerId = winnerId
+        self.scoresCsv = scoresCsv
+        self.suggestedPlayOrder = suggestedPlayOrder
+        self.player1Votes = player1Votes
+        self.player2Votes = player2Votes
+    }
 }
