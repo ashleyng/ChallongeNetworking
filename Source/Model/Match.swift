@@ -19,7 +19,7 @@ public struct Match: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case id, state
+        case id, state, round
         case player1Id = "player1_id"
         case player2Id = "player2_id"
         case tournamentId = "tournament_id"
@@ -28,6 +28,7 @@ public struct Match: Codable {
         case suggestedPlayOrder = "suggested_play_order"
         case player1Votes = "player1_votes"
         case player2Votes = "player2_votes"
+        case groupId = "group_id"
     }
     
     public let id: Int
@@ -40,6 +41,8 @@ public struct Match: Codable {
     public let suggestedPlayOrder: Int?
     public let player1Votes: Int?
     public let player2Votes: Int?
+    public let groupId: Int?
+    public let round: Int // TODO: make sure this isn't optional
     
     /// Creates a dictionary mapped from the participants
     /// main Id to their score
@@ -69,7 +72,9 @@ public struct Match: Codable {
                 scoresCsv: String?,
                 suggestedPlayOrder: Int?,
                 player1Votes: Int?,
-                player2Votes: Int?) {
+                player2Votes: Int?,
+                groupId: Int?,
+                round: Int) {
         self.id = id
         self.player1Id = player1Id
         self.player2Id = player2Id
@@ -80,5 +85,7 @@ public struct Match: Codable {
         self.suggestedPlayOrder = suggestedPlayOrder
         self.player1Votes = player1Votes
         self.player2Votes = player2Votes
+        self.groupId = groupId
+        self.round = round
     }
 }
