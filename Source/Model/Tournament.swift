@@ -38,6 +38,7 @@ public struct Tournament: Codable {
         case doubleElimination = "double elimination"
         case roundRobin = "round robin"
         case swiss
+        case freeForAll = "free for all"
     }
     
     enum CodingKeys: String, CodingKey {

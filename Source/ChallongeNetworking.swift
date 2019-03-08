@@ -26,6 +26,7 @@ public class ChallongeNetworking {
         case decodeFail
         case unknown
         case fourOhFour
+        case otherStatusCode(Int)
     }
     
     public init(username: String, apiKey: String) {
@@ -65,13 +66,12 @@ public class ChallongeNetworking {
             onError?(error)
         } else if let data = data,
             let response = response as? HTTPURLResponse {
-            print("STATUS CODE: \(response.statusCode)")
             if (response.statusCode == 200) {
                 completion?(data)
             } else if (response.statusCode == 404) {
                 onError?(ChallongeError.fourOhFour)
             } else {
-                print("OTHER EEERRROROR: \(response.statusCode)")
+                onError?(ChallongeError.otherStatusCode(response.statusCode))
             }
         } else {
             onError?(ChallongeError.unknown)
