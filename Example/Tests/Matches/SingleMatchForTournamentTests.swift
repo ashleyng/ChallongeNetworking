@@ -41,7 +41,7 @@ class SingleMatchForTournamentTests: XCTestCase {
     }
     
     private func setupExpectedMatch() -> Match {
-        return Match(id: 123, player1Id: 93, player2Id: 94, state: .complete, tournamentId: 12345, winnerId: 93, scoresCsv: "4-2", suggestedPlayOrder: nil, player1Votes: nil, player2Votes: nil)
+        return Match(id: 123, player1Id: 93, player2Id: 94, state: .complete, tournamentId: 12345, winnerId: 93, scoresCsv: "4-2", suggestedPlayOrder: nil, player1Votes: nil, player2Votes: nil, groupId: 406, round: 1)
     }
 
 }

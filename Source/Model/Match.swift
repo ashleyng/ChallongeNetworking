@@ -42,7 +42,7 @@ public struct Match: Codable {
     public let player1Votes: Int?
     public let player2Votes: Int?
     public let groupId: Int?
-    public let round: Int // TODO: make sure this isn't optional
+    public let round: Int
     
     /// Creates a dictionary mapped from the participants
     /// main Id to their score
