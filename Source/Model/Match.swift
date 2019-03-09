@@ -69,15 +69,6 @@ public struct Match: Codable {
     public let round: Int
     public let preReqInfo: PreReqInformation
     
-    /// Creates a dictionary mapped from the participants
-    /// main Id to their score
-    public var scores: Dictionary<Int, String>? {
-        guard let player1Id = player1Id, let player2Id = player2Id, let splitScore = scoresCsv?.split(separator: "-"), splitScore.count > 0 else {
-            return nil
-        }
-        return [player1Id: String(splitScore[0]), player2Id: String(splitScore[1])]
-    }
-    
     public var playerOneScore: String? {
         guard let splitScore = scoresCsv?.split(separator: "-"), splitScore.count > 0 else {
             return nil
@@ -90,16 +81,6 @@ public struct Match: Codable {
             return nil
         }
         return String(splitScore[1])
-    }
-    
-    /// Creates a dictionary mapped from the participants
-    /// main Id to the number of votes they received
-    public var votes: Dictionary<Int, Int>? {
-        guard let player1Id = player1Id, let player2Id = player2Id, let player1Votes = player1Votes, let player2Votes = player2Votes else {
-            return nil
-        }
-        
-        return [player1Id: player1Votes, player2Id: player2Votes]
     }
     
     public init(from decoder: Decoder) throws {
