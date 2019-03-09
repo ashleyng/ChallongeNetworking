@@ -71,6 +71,22 @@ class FetchMatchesForTournamentTests: XCTestCase {
         XCTAssertEqual(actualMatch.scoresCsv, expectedMatch.scoresCsv)
     }
     
+    func testPreReqInformation() {
+        var actualMatch: Match!
+        let expectation = self.expectation(description: "Fetch Matches")
+        networking.getMatchesForTournament(tournamentId, completion: { matches in
+            actualMatch = matches[5]
+            expectation.fulfill()
+        })
+        let expectedMatch = setupExpectedMatches()[5].match
+        
+        waitForExpectations(timeout: Constants.stubTimout, handler: nil)
+        XCTAssertEqual(actualMatch.preReqInfo.player1MatchId, expectedMatch.preReqInfo.player1MatchId)
+        XCTAssertEqual(actualMatch.preReqInfo.player2MatchId, expectedMatch.preReqInfo.player2MatchId)
+        XCTAssertEqual(actualMatch.preReqInfo.player1MatchIsLoser, expectedMatch.preReqInfo.player1MatchIsLoser)
+        XCTAssertEqual(actualMatch.preReqInfo.player2MatchIsLoser, expectedMatch.preReqInfo.player2MatchIsLoser)
+    }
+    
     private func setupExpectedMatches() -> [RootMatch] {
         let preReq = Match.PreReqInformation(player1MatchId: nil, player2MatchId: nil, player1MatchIsLoser: false, player2MatchIsLoser: false)
         let match1 = Match(id: 1, player1Id: 34, player2Id: 35, state: .complete, tournamentId: 12345, winnerId: 34, scoresCsv: "5-3", suggestedPlayOrder: 1, player1Votes: nil, player2Votes: nil, groupId: nil, round: 1, preReqInfo: preReq)
@@ -78,8 +94,9 @@ class FetchMatchesForTournamentTests: XCTestCase {
         let match3 = Match(id: 3, player1Id: 90, player2Id: 39, state: .complete, tournamentId: 12345, winnerId: 39, scoresCsv: "2-5", suggestedPlayOrder: 5, player1Votes: nil, player2Votes: nil, groupId: nil, round: 1, preReqInfo: preReq)
         let match4 = Match(id: 4, player1Id: 33, player2Id: 36, state: .open, tournamentId: 12345, winnerId: nil, scoresCsv: "", suggestedPlayOrder: 6, player1Votes: nil, player2Votes: nil, groupId: nil, round: 1, preReqInfo: preReq)
         let match5 = Match(id: 5, player1Id: 87, player2Id: 42, state: .open, tournamentId: 12345, winnerId: nil, scoresCsv: "", suggestedPlayOrder: 7, player1Votes: nil, player2Votes: nil, groupId: nil, round: 1, preReqInfo: preReq)
+        let match6 = Match(id: 6, player1Id: nil, player2Id: nil, state: .open, tournamentId: 12345, winnerId: nil, scoresCsv: nil, suggestedPlayOrder: 8, player1Votes: nil, player2Votes: nil, groupId: nil, round: 8, preReqInfo: Match.PreReqInformation(player1MatchId: 8, player2MatchId: 9, player1MatchIsLoser: true, player2MatchIsLoser: false))
         
-        return [RootMatch(match: match1), RootMatch(match: match2), RootMatch(match: match3), RootMatch(match: match4), RootMatch(match: match5)]
+        return [RootMatch(match: match1), RootMatch(match: match2), RootMatch(match: match3), RootMatch(match: match4), RootMatch(match: match5), RootMatch(match: match6)]
     }
 
 }
