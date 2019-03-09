@@ -32,6 +32,13 @@ public struct Match: Codable {
         public let player2MatchId: Int?
         public let player1MatchIsLoser: Bool
         public let player2MatchIsLoser: Bool
+        
+        public init(player1MatchId: Int?, player2MatchId: Int?, player1MatchIsLoser: Bool, player2MatchIsLoser: Bool) {
+            self.player1MatchId = player1MatchId
+            self.player2MatchId = player2MatchId
+            self.player1MatchIsLoser = player1MatchIsLoser
+            self.player2MatchIsLoser = player2MatchIsLoser
+        }
     }
     
     enum CodingKeys: String, CodingKey {
