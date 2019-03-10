@@ -38,6 +38,8 @@ class SingleMatchForTournamentTests: XCTestCase {
         XCTAssertEqual(actualMatch.state, expectedMatch.state)
         XCTAssertEqual(actualMatch.winnerId, expectedMatch.winnerId)
         XCTAssertEqual(actualMatch.scoresCsv, expectedMatch.scoresCsv)
+        XCTAssertEqual(actualMatch.playerOneScore, expectedMatch.playerOneScore)
+        XCTAssertEqual(actualMatch.playerTwoScore, expectedMatch.playerTwoScore)
     }
     
     private func setupExpectedMatch() -> Match {
