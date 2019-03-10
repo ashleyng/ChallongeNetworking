@@ -49,15 +49,36 @@ class FetchParticipantsForTournamentTests: XCTestCase {
         waitForExpectations(timeout: Constants.stubTimout, handler: nil)
         
         XCTAssertEqual(actualParticipants[0].name, expectedParticipants[0].name)
-        XCTAssertEqual(actualParticipants[0].id.group, expectedParticipants[0].id.group)
-
         XCTAssertEqual(actualParticipants[1].name, expectedParticipants[1].name)
-        XCTAssertEqual(actualParticipants[1].id.group, expectedParticipants[1].id.group)
-
         XCTAssertEqual(actualParticipants[2].name, expectedParticipants[2].name)
+        XCTAssertEqual(actualParticipants[3].name, expectedParticipants[3].name)
+    }
+    
+    func testParticipantsIds() {
+        var actualParticipants: [Participant]!
+        let expectation = self.expectation(description: "Fetch Participants")
+        networking.getParticipantsForTournament(tournamentId, completion: { participants in
+            actualParticipants = participants
+            expectation.fulfill()
+        })
+        let expectedParticipants = setupNonGroupParticipants()
+        
+        waitForExpectations(timeout: Constants.stubTimout, handler: nil)
+        
+        XCTAssertEqual(actualParticipants[0].id.all, expectedParticipants[0].id.all)
+        XCTAssertEqual(actualParticipants[0].id.main, expectedParticipants[0].id.main)
+        XCTAssertEqual(actualParticipants[0].id.group, expectedParticipants[0].id.group)
+        
+        XCTAssertEqual(actualParticipants[1].id.all, expectedParticipants[1].id.all)
+        XCTAssertEqual(actualParticipants[1].id.main, expectedParticipants[1].id.main)
+        XCTAssertEqual(actualParticipants[1].id.group, expectedParticipants[1].id.group)
+        
+        XCTAssertEqual(actualParticipants[2].id.all, expectedParticipants[2].id.all)
+        XCTAssertEqual(actualParticipants[2].id.main, expectedParticipants[2].id.main)
         XCTAssertEqual(actualParticipants[2].id.group, expectedParticipants[2].id.group)
         
-        XCTAssertEqual(actualParticipants[3].name, expectedParticipants[3].name)
+        XCTAssertEqual(actualParticipants[3].id.all, expectedParticipants[3].id.all)
+        XCTAssertEqual(actualParticipants[3].id.main, expectedParticipants[3].id.main)
         XCTAssertEqual(actualParticipants[3].id.group, expectedParticipants[3].id.group)
     }
     
