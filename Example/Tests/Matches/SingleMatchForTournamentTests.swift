@@ -38,10 +38,13 @@ class SingleMatchForTournamentTests: XCTestCase {
         XCTAssertEqual(actualMatch.state, expectedMatch.state)
         XCTAssertEqual(actualMatch.winnerId, expectedMatch.winnerId)
         XCTAssertEqual(actualMatch.scoresCsv, expectedMatch.scoresCsv)
+        XCTAssertEqual(actualMatch.playerOneScore, expectedMatch.playerOneScore)
+        XCTAssertEqual(actualMatch.playerTwoScore, expectedMatch.playerTwoScore)
     }
     
     private func setupExpectedMatch() -> Match {
-        return Match(id: 123, player1Id: 93, player2Id: 94, state: .complete, tournamentId: 12345, winnerId: 93, scoresCsv: "4-2", suggestedPlayOrder: nil, player1Votes: nil, player2Votes: nil, groupId: 406, round: 1)
+        let preReq = Match.PreReqInformation(player1MatchId: nil, player2MatchId: nil, player1MatchIsLoser: false, player2MatchIsLoser: false)
+        return Match(id: 123, player1Id: 93, player2Id: 94, state: .complete, tournamentId: 12345, winnerId: 93, scoresCsv: "4-2", suggestedPlayOrder: nil, player1Votes: nil, player2Votes: nil, groupId: 406, round: 1, preReqInfo: preReq)
     }
 
 }
